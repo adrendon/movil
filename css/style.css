@@ -842,8 +842,8 @@
 }
 
 .texto001 {
-	-webkit-animation-delay: 0.4 s;
-	-webkit-animation-duration: 0.4s;
+	-webkit-animation-delay: 1.4s;
+	-webkit-animation-duration: .4s;
 	/*-webkit-animation-iteration-count: infinite;*/
 	bottom: 0;
 	position: absolute;
