@@ -779,8 +779,7 @@
   -moz-animation: play 1.8s steps(43);
   -ms-animation: play 1.8s steps(43);
   -o-animation: play 1.8s steps(43);
-  -webkit-animation: play 1.8s steps(43);
-  animation: play 1.8s steps(43);
+  -webkit-animation: play 1.8s steps(43) forwards;
   -webkit-animation-delay: 0.8s;
   background-position: 0 0;
   background: url('http://i.imgur.com/1QwNz2R.png') !important;
