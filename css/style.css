@@ -850,3 +850,30 @@
 	 text-transform: uppercase !important;
 	 text-align: center !important;
 }
+
+.page002 {
+	background: url('../pages/2.jpg') !important;
+	background-size: cover !important;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.page003 {
+	background: url('../pages/3.jpg') !important;
+	background-size: cover !important;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.images_2 {
+	overflow: hidden !important;
+	width: 100% !important;
+	max-width: 590px !important;
+}
+
+.images_2 li {
+	-webkit-animation-delay: 0.8s;
+	-webkit-animation-duration: 0.8s;
+}
