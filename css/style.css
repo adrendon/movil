@@ -890,20 +890,16 @@
   top: 50px;
 }
 
-.content001, .content002, .content004, .content005 {
-	display: none
-}
-
-.content003 {
+.content001, .content002, .content003, .content004, .content005 {
 	background: rgb(0, 32, 63) !important;
 	border-radius: 50px !important;
-  padding: 60px !important;
+  	padding: 60px !important;
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: transform 0.4s;
 }
 
 .contenido .slide {
--webkit-transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
 
 .contenido p {

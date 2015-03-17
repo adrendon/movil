@@ -165,11 +165,11 @@
                          <!-- description for page from  --> 
                         <div class="fb5-page-book">
                          <ul class="images_2">
-                            <li class="animated fadeInLeft"><a class="btn001" href="javascript:void(0)"><img data-src="img/2_3/btn_001.png"></a></li>
-                            <li class="animated fadeInRight"><a class="btn002" href="javascript:void(0)"><img data-src="img/2_3/btn_002.png"></a></li>
-                            <li class="animated fadeInLeft"><a class="btn003" href="javascript:void(0)"><img data-src="img/2_3/btn_003.png"></a></li>
-                            <li class="animated fadeInRight"><a class="btn004" href="javascript:void(0)"><img data-src="img/2_3/btn_004.png"></a></li>
-                            <li class="animated fadeInLeft"><a class="btn005" href="javascript:void(0)"><img data-src="img/2_3/btn_005.png"></a></li>
+                            <li class="animated fadeInLeft"><a class="btn001" href="#content001"><img data-src="img/2_3/btn_001.png"></a></li>
+                            <li class="animated fadeInRight"><a class="btn002" href="#content002"><img data-src="img/2_3/btn_002.png"></a></li>
+                            <li class="animated fadeInLeft"><a class="btn003" href="#content003"><img data-src="img/2_3/btn_003.png"></a></li>
+                            <li class="animated fadeInRight"><a class="btn004" href="#content004"><img data-src="img/2_3/btn_004.png"></a></li>
+                            <li class="animated fadeInLeft"><a class="btn005" href="#content005"><img data-src="img/2_3/btn_005.png"></a></li>
                         </ul>
                         </div> 
                                   
@@ -196,31 +196,32 @@
                          <!-- description for page --> 
                          <div class="fb5-page-book">
                             <div class="contenido">
-                                <div class="content001">
+                                <div id="content001" class="content001">
                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                                 </div>
-                                <div class="content002">
+                                <div id="content002" class="content002">
                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                                 </div>
-                                <div class="content003">
+                                <div id="content003" class="content003">
+                                 <p>Somos especialistas en imágenes diagnósticas con más de 30 años de experiencia. Ofrecemos los servicios de Resonancia magnética de 1.5 y 3.0 Teslas, Tomografía, Densitometría ósea, Mamografía, Rayos X, y Ecografía convencional, doppler y 4D.</p>
+
+                                    <p>Nuestra sede principal está ubicada en la ciudad de Medellín en el barrio Prado Centro. Además, tenemos una segunda sede en el municipio de Santa Fe de Antioquia con el servicio de Tomografía.</p>
+
+                                    <p>Para el 2016, abriremos otro centro diagnóstico ubicado en la tercera etapa del Centro Comercial Mayorca.</p>
+                                </div>
+                                <div id="content004" class="content004">
                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                                 </div>
-                                <div class="content004">
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                                </div>
-                                <div class="content005">
+                                <div id="content005" class="content005">
                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -684,9 +685,11 @@
 
     <script type="text/javascript">
 window.onload = function() {
-   jQuery('.btn003 img').on('click' ,function() {
-       jQuery('.content003').addClass('slide');
-   });
+jQuery('ul.images_2 a img').on('click', function(){
+  var idContent = jQuery(this).parent().attr('href');
+  jQuery('.contenido > div').removeClass('slide');
+  jQuery(idContent).addClass('slide');
+});
 };
     </script>
 </body>
