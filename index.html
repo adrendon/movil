@@ -684,13 +684,14 @@
     </script> 
 
     <script type="text/javascript">
-window.onload = function() {
-jQuery('ul.images_2 a img').on('click', function(){
-  var idContent = jQuery(this).parent().attr('href');
-  jQuery('.contenido > div').removeClass('slide');
-  jQuery(idContent).addClass('slide');
-});
-};
+    window.onload = function() {
+      jQuery('ul.images_2 a img').on('click', function(e){
+        e.preventDefault();
+        var idContent = jQuery(this).parent().attr('href');
+        jQuery('.contenido > div').removeClass('slide');
+        jQuery(idContent).addClass('slide');
+      });
+    };
     </script>
 </body>
 </html>
