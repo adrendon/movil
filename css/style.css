@@ -865,6 +865,7 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	-webkit-animation-delay: 0.1s;
 }
 
 .images_2 {
@@ -876,4 +877,22 @@
 .images_2 li {
 	-webkit-animation-delay: 0.8s;
 	-webkit-animation-duration: 0.8s;
+}
+
+.contenido {
+  background: rgb(0, 32, 63) !important;
+  width: 70%;
+  right: 0;
+  position: absolute;
+  top: 50px;
+  border-radius: 50px !important;
+  padding: 60px !important;
+  -webkit-transform: translateX(1000px);
+  -webkit-transition: transform 0.4s;
+}
+
+.contenido p {
+	  color: #fff !important;
+	  font-family: 'champagne' !important;
+	 font-size: 34px !important;
 }

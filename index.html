@@ -1,7 +1,5 @@
 <!doctype html>
 <html>
-
-<!-- Mirrored from page-flip.info/preview_diamond/full-area.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Mar 2015 01:18:34 GMT -->
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
    
@@ -136,8 +134,6 @@
                                             <li class="animated fadeInRight"><a href="javascript:setPage(2)"><img data-src="img/portada/004Right.png"></a></li>
                                             <li class="animated fadeInLeft"><a href="javascript:setPage(2)"><img data-src="img/portada/005Left.png"></a></li>
                                             <li class="animated fadeInRight"><a href="javascript:setPage(2)"><img data-src="img/portada/005Right.png"></a></li>
-                                            <!-- <li><a href="javascript:youtube('zWzRrqEvfPU','560','315')"><img data-src="img/cover-photo2.jpg"></a></li>
-                                            <li><a href="javascript:youtube('48I0IHmsuOE','560','315')"><img data-src="img/cover-photo3.jpg"></a></li> -->
                                          </ul>
                                          <div class="texto001 animated fadeInDown" id="yourElement">
                                           <h1>Portafolio de Servicios</h1>
@@ -162,19 +158,18 @@
                   
                   
                 <!-- BEGIN PAGE 2-->           
-                <div data-background-image="" class="">
+                <div data-background-image="pages/2.jpg" class="">
                        
                      <!-- begin container page book --> 
                      <div class="fb5-cont-page-book">
-                       <div class="page002 animated fadeInLeft"></div>
                          <!-- description for page from  --> 
                         <div class="fb5-page-book">
                          <ul class="images_2">
-                            <li class="animated fadeInLeft"><a href="javascript:setPage(2)"><img data-src="img/2_3/btn_001.png"></a></li>
-                            <li class="animated fadeInRight"><a href="javascript:setPage(2)"><img data-src="img/2_3/btn_002.png"></a></li>
-                            <li class="animated fadeInLeft"><a href="javascript:setPage(2)"><img data-src="img/2_3/btn_003.png"></a></li>
-                            <li class="animated fadeInRight"><a href="javascript:setPage(2)"><img data-src="img/2_3/btn_004.png"></a></li>
-                            <li class="animated fadeInLeft"><a href="javascript:setPage(2)"><img data-src="img/2_3/btn_005.png"></a></li>
+                            <li class="animated fadeInLeft"><a class="btn001" href="javascript:void(0)"><img data-src="img/2_3/btn_001.png"></a></li>
+                            <li class="animated fadeInRight"><a class="btn002" href="javascript:void(0)"><img data-src="img/2_3/btn_002.png"></a></li>
+                            <li class="animated fadeInLeft"><a class="btn003" href="javascript:void(0)"><img data-src="img/2_3/btn_003.png"></a></li>
+                            <li class="animated fadeInRight"><a class="btn004" href="javascript:void(0)"><img data-src="img/2_3/btn_004.png"></a></li>
+                            <li class="animated fadeInLeft"><a class="btn005" href="javascript:void(0)"><img data-src="img/2_3/btn_005.png"></a></li>
                         </ul>
                         </div> 
                                   
@@ -193,15 +188,45 @@
                 
                 
                 <!-- BEGIN PAGE 3 -->          
-                <div data-background-image="" class="">
+                <div data-background-image="pages/3.jpg" class="">
                        
                      <!-- container page book --> 
                      <div class="fb5-cont-page-book">
-                      <div class="page003 animated fadeInRight"></div>
-                       
+                     
                          <!-- description for page --> 
                          <div class="fb5-page-book">
-                                         
+                            <div class="contenido">
+                                <div class="content001">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="content002">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="content003">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="content004">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                                <div class="content005">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                </div>
+                            </div>     
                          </div> 
                                   
                         <!-- number page and title  -->                
@@ -656,7 +681,13 @@
 	'lazy_loading_pages':'false'
     })    
     </script> 
-</body>
 
-<!-- Mirrored from page-flip.info/preview_diamond/full-area.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Mar 2015 01:18:54 GMT -->
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('.btn003').on('click' ,(function()) {
+          jQuery('.content003').addClass('slide');
+        });
+    });
+    </script>
+</body>
 </html>
