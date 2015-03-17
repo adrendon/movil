@@ -820,7 +820,7 @@
 	-webkit-animation-delay: 0.7s;
 }
 .imagesHome li:nth-child(4) {
-	-webkit-animation-delay: 08s;
+	-webkit-animation-delay: 0.8s;
 }
 .imagesHome li:nth-child(5) {
 	-webkit-animation-delay: 0.9s;
@@ -842,7 +842,7 @@
 }
 
 .texto001 {
-	-webkit-animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4 s;
 	-webkit-animation-duration: 0.4s;
 	/*-webkit-animation-iteration-count: infinite;*/
 	bottom: 0;
