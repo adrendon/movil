@@ -890,7 +890,7 @@
 }
 
 .contenido {
-  width: 90%;
+  width: 100%;
   right: 0;
   position: absolute;
   top: 50px;
@@ -905,6 +905,13 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+
+.content001 {
+	background: url(../img/2_3/quienes_somos.png) no-repeat !important;
+	background-size: 85% 85% !important;
+	width: 912px !important;
+	height: 539px !important;
 }
 
 .contenido .slide {
