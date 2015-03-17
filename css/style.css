@@ -879,16 +879,31 @@
 	-webkit-animation-duration: 0.8s;
 }
 
+#fb5 .fb5-page-book ul li a {
+	display: block;
+}
+
 .contenido {
-  background: rgb(0, 32, 63) !important;
   width: 70%;
   right: 0;
   position: absolute;
   top: 50px;
-  border-radius: 50px !important;
+}
+
+.content001, .content002, .content004, .content005 {
+	display: none
+}
+
+.content003 {
+	background: rgb(0, 32, 63) !important;
+	border-radius: 50px !important;
   padding: 60px !important;
-  -webkit-transform: translateX(1000px);
-  -webkit-transition: transform 0.4s;
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: transform 0.4s;
+}
+
+.contenido .slide {
+-webkit-transform: translateX(0);
 }
 
 .contenido p {
