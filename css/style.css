@@ -843,7 +843,7 @@
 
 .texto001 {
 	-webkit-animation-delay: 0.8s;
-	-webkit-animation-duration: .4s;
+	-webkit-animation-duration: 1.4s;
 	/*-webkit-animation-iteration-count: infinite;*/
 	bottom: 0;
 	position: absolute;
@@ -864,9 +864,9 @@
 }
 
 .images_2 li {
-	-webkit-animation-duration: 0.8s;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-timing-function: ease;
 }
-
 
 .images_2 li:nth-child(1) {
 	-webkit-animation-delay: 0.1s;
