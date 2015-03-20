@@ -936,3 +936,14 @@
 .img4 {
 	background: url('../img/3_4/foto_big.png');
 }
+
+.block_left {
+    bottom: 0;
+    height: 546px;
+    left: 0;
+    margin: auto !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 707px;
+}
