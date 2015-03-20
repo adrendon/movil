@@ -864,24 +864,23 @@
 }
 
 .images_2 li {
-	-webkit-animation-duration: 1.2s;
-	-webkit-animation-timing-function: ease;
+	-webkit-animation-duration: 0.8s;
 }
 
 .images_2 li:nth-child(1) {
-	-webkit-animation-delay: 0.1s;
-}
-.images_2 li:nth-child(2) {
-	-webkit-animation-delay: 0.2s;
-}
-.images_2 li:nth-child(3) {
-	-webkit-animation-delay: 0.3s;
-}
-.images_2 li:nth-child(4) {
 	-webkit-animation-delay: 0.4s;
 }
-.images_2 li:nth-child(5) {
+.images_2 li:nth-child(2) {
 	-webkit-animation-delay: 0.5s;
+}
+.images_2 li:nth-child(3) {
+	-webkit-animation-delay: 0.6s;
+}
+.images_2 li:nth-child(4) {
+	-webkit-animation-delay: 0.7s;
+}
+.images_2 li:nth-child(5) {
+	-webkit-animation-delay: 0.8s;
 }
 
 #fb5 .fb5-page-book ul li a {
