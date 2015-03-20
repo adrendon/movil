@@ -982,3 +982,7 @@
 .titleMostrar {
 	-webkit-transform: translateX(0);
 }
+.page4, .page5 {
+  left: 0px !important;
+  width: 960px !important;
+}
