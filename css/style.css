@@ -937,7 +937,7 @@
 	background: url('../img/3_4/foto_big.png');
 }
 
-.block_left {
+.block_left, .block_Right {
     bottom: 0;
     height: 546px;
     left: 0;
@@ -946,4 +946,20 @@
     right: 0;
     top: 0;
     width: 707px;
+    -webkit-transition: -webkit-transform 0.4s;
+}
+.block_left {
+    -webkit-transform: translateX(-1000px);
+}
+.block_Right {
+    -webkit-transform: translateX(1000px);
+}
+.block_Mostrar {
+	-webkit-transform: translateX(0);
+}
+.hidden {
+	-webkit-transition: -webkit-transform 0.4s;
+}
+.ocultar {
+	-webkit-transform: translateX(-1000px);
 }

@@ -227,7 +227,7 @@
                          <!-- description for page from  --> 
                          <div class="fb5-page-book">
                           <div class="animated fadeInLeft">
-                            <img data-src="img/3_4/foto_big.png" height="1084" width="1361" style="width: 100%;">
+                            <img class="hidden" data-src="img/3_4/foto_big.png" height="1084" width="1361" style="width: 100%;">
                           </div>
                           <div class="block_left">
                               <img data-src="img/3_4/block_left.png" height="546" width="707">
@@ -678,6 +678,11 @@
       jQuery('#fb5-ajax a').on('click', function(e){
         e.preventDefault();
      });
+      jQuery('.btnTitle').on('click' , function (e){
+        e.preventDefault
+        jQuery('.hidden').addClass('ocultar');
+        jQuery('.block_left, .block_Right').addClass('block_Mostrar');
+      });
     };
     </script>
 </body>
