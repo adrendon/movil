@@ -889,9 +889,6 @@
 
 .contenido {
   width: 100%;
-  right: 0;
-  position: absolute;
-  top: 50px;
 }
 
 .content001, .content002, .content003, .content004, .content005 {
@@ -901,15 +898,44 @@
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: transform 0.4s;
 	position: absolute;
-	left: 0;
+	bottom: 0;
 	top: 0;
+	margin: auto !important;
 }
 
 .content001 {
-	background: url(../img/2_3/quienes_somos.png) no-repeat !important;
+	background: url('../img/2_3/quienes_somos.png') no-repeat !important;
 	background-size: 85% 85% !important;
 	width: 912px !important;
 	height: 539px !important;
+}
+
+.content002 {
+	background: url('../img/2_3/reconocimientos.png') no-repeat !important;
+	background-size: 85% 85% !important;
+	width: 912px !important;
+	height: 262px !important;
+}
+
+.content003 {
+	background: url('../img/2_3/mision.png') no-repeat !important;
+	background-size: 85% 85% !important;
+	width: 911px !important;
+	height: 262px !important;
+}
+
+.content004 {
+	background: url('../img/2_3/vision.png') no-repeat !important;
+	background-size: 85% 85% !important;
+	width: 911px !important;
+	height: 228px !important;
+}
+
+.content005 {
+	background: url('../img/2_3/valores.png') no-repeat !important;
+	background-size: 85% 85% !important;
+	width: 503px !important;
+	height: 393px !important;
 }
 
 .contenido .slide {
