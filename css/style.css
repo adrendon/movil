@@ -774,11 +774,10 @@
 }
 
 .logo {
-  -moz-animation: play 1.8s steps(43);
-  -ms-animation: play 1.8s steps(43);
-  -o-animation: play 1.8s steps(43);
-  -webkit-animation: play 1.8s steps(43) forwards;
   -webkit-animation-delay: 0.1s;
+  -webkit-animation: play 1.8s steps(43) forwards;
+  animation-delay: 0.1s;
+  animation: play 1.8s steps(43) forwards;
   background-position: 0 0;
   background: url('http://i.imgur.com/1QwNz2R.png') !important;
   opacity: 0;
@@ -881,23 +880,23 @@
 }
 
 .content001, .content002, .content003, .content004, .content005 {
-	background: rgba(3, 36, 65, 0.8) !important;
-	border-radius: 50px !important;
-  	padding: 60px !important;
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
-	position: absolute;
+	background: rgba(3, 36, 65, 0.8) !important;
+	border-radius: 50px !important;
 	bottom: 0;
-	top: 0;
 	left: 0;
-	right: 0;
 	margin: auto !important;
+	padding: 0 !important;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .content001 {
 	background: url('../img/2_3/quienes_somos.png') no-repeat !important;
-	width: 912px !important;
-	height: 539px !important;
+	width: 872px !important;
+	height: 518px !important;
 }
 
 .content002 {
