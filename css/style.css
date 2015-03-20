@@ -775,23 +775,23 @@
 
 .logo {
   -webkit-animation-delay: 0.1s;
-  -webkit-animation: play 1.8s steps(43) forwards;
+  -webkit-animation: play 1.8s steps(38) forwards;
   animation-delay: 0.1s;
-  animation: play 1.8s steps(43) forwards;
+  animation: play 1.8s steps(38) forwards;
   background-position: 0 0;
   background: url('../img/portada/logo.png') !important;
   opacity: 0;
-  height: 378px;
+  height: 377px;
   margin: auto;
-  width: 902px;
+  width: 882px;
   max-width: 100%;
 }
 
 @keyframes play {
-	100% { background-position: 0  16254px; opacity: 1}
+	100% { background-position: 0  14326px; opacity: 1}
 }
 @-webkit-keyframes play {
-	100% { background-position: 0  16254px; opacity: 1}
+	100% { background-position: 0  14326px; opacity: 1}
 }
 
 
