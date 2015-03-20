@@ -251,9 +251,6 @@
 		position:absolute;
 		top:65%;
 		-webkit-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-		-moz-transform: translate(0,-50%);
-		-o-transform: translate(0,-50%);
         transform: translate(0,-50%);
 		clear: both;
 		width: 100%;
@@ -277,7 +274,8 @@
 		-moz-user-select: -moz-none;
 		-khtml-user-select: none;
 		-webkit-user-select: none;
-		user-select: none;
+		-ms-user-select: none;
+		    user-select: none;
 		box-shadow:none;
 	}
 		
@@ -796,15 +794,6 @@
 @-webkit-keyframes play {
 	100% { background-position: 0  15222px; opacity: 1}
 }
-@-moz-keyframes play {
-	100% { background-position: 0  15222px; opacity: 1}
-}
-@-o-keyframes play {
-	100% { background-position: 0  15222px; opacity: 1}
-}
-@-ms-keyframes play {
-	100% { background-position: 0  15222px; opacity: 1}
-}
 
 
 .imagesHome li {
@@ -896,45 +885,42 @@
 	border-radius: 50px !important;
   	padding: 60px !important;
 	-webkit-transform: translateX(1000px);
-	-webkit-transition: transform 0.4s;
+	-webkit-transition: -webkit-transform 0.4s;
 	position: absolute;
 	bottom: 0;
 	top: 0;
+	left: 0;
+	right: 0;
 	margin: auto !important;
 }
 
 .content001 {
 	background: url('../img/2_3/quienes_somos.png') no-repeat !important;
-	background-size: 85% 85% !important;
 	width: 912px !important;
 	height: 539px !important;
 }
 
 .content002 {
 	background: url('../img/2_3/reconocimientos.png') no-repeat !important;
-	background-size: 85% 85% !important;
 	width: 912px !important;
 	height: 262px !important;
 }
 
 .content003 {
 	background: url('../img/2_3/mision.png') no-repeat !important;
-	background-size: 85% 85% !important;
 	width: 911px !important;
 	height: 262px !important;
 }
 
 .content004 {
 	background: url('../img/2_3/vision.png') no-repeat !important;
-	background-size: 85% 85% !important;
 	width: 911px !important;
 	height: 228px !important;
 }
 
 .content005 {
 	background: url('../img/2_3/valores.png') no-repeat !important;
-	background-size: 85% 85% !important;
-	width: 503px !important;
+	width: 508px !important;
 	height: 393px !important;
 }
 
