@@ -932,3 +932,7 @@
 	  font-family: 'champagne' !important;
 	 font-size: 34px !important;
 }
+
+.img4 {
+	background: url('../img/3_4/foto_big.png');
+}
