@@ -226,6 +226,9 @@
                        
                          <!-- description for page from  --> 
                          <div class="fb5-page-book">
+                          <div class="titleLeft">
+                            <img data-src="img/3_4/title_left.png" height="89" width="416">
+                          </div>
                           <div class="animated fadeInLeft">
                             <img class="hidden" data-src="img/3_4/foto_big.png" height="1084" width="1361" style="width: 100%;">
                           </div>
@@ -257,6 +260,9 @@
                            
                                 <!-- description for page from --> 
                                 <div class="fb5-page-book">
+                                  <div class="titleRight">
+                                    <img data-src="img/3_4/title_right.png" height="89" width="415">
+                                  </div>
                                   <a href="#" class="animated fadeInRight btnTitle">
                                     <img data-src="img/3_4/btn_title.png" height="89" width="831" style="margin-top: 90px;">
                                   </a>                                  
@@ -680,6 +686,8 @@
      });
       jQuery('.btnTitle').on('click' , function (e){
         e.preventDefault
+        jQuery(this).hide();
+        jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
         jQuery('.hidden').addClass('ocultar');
         jQuery('.block_left, .block_Right').addClass('block_Mostrar');
       });

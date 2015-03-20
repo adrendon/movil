@@ -944,7 +944,7 @@
     margin: auto !important;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 120px;
     width: 707px;
     -webkit-transition: -webkit-transform 0.4s;
 }
@@ -962,4 +962,23 @@
 }
 .ocultar {
 	-webkit-transform: translateX(-1000px);
+}
+.btnTitle {
+	-webkit-animation-delay: 0.4s;
+}
+.titleLeft, .titleRight {
+	position: absolute;
+  	top: 90px;
+  	-webkit-transition: -webkit-transform 0.4s;
+}
+.titleLeft {
+	right: 0;
+	-webkit-transform: translateX(-1000px);
+}
+.titleRight {
+	left: 0;
+	-webkit-transform: translateX(1000px);
+}
+.titleMostrar {
+	-webkit-transform: translateX(0);
 }
