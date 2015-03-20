@@ -779,19 +779,19 @@
   animation-delay: 0.1s;
   animation: play 1.8s steps(43) forwards;
   background-position: 0 0;
-  background: url('../img/portada/logo.jpg') !important;
+  background: url('../img/portada/logo.png') !important;
   opacity: 0;
-  height: 290px;
+  height: 378px;
   margin: auto;
-  width: 916px;
+  width: 902px;
   max-width: 100%;
 }
 
 @keyframes play {
-	100% { background-position: 0  12470px; opacity: 1}
+	100% { background-position: 0  16254px; opacity: 1}
 }
 @-webkit-keyframes play {
-	100% { background-position: 0  12470px; opacity: 1}
+	100% { background-position: 0  16254px; opacity: 1}
 }
 
 
