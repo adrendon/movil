@@ -256,7 +256,7 @@ html,body {
 
 	#fb5 #fb5-cover ul {
 		position:absolute;
-		top:65%;
+		top:65.5%;
 		-webkit-transform: translate(0,-50%);
         transform: translate(0,-50%);
 		clear: both;
