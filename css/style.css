@@ -3,6 +3,13 @@
 @import url('elements.css');
 @import url('preloader.css');
 
+
+html,body {
+	margin: 0;
+	overflow:auto !important;
+	padding: 0;
+}
+
 @font-face {
     font-family: 'champagne';
     src: url('../fonts/font-webfont.eot');
@@ -781,17 +788,17 @@
   background-position: 0 0;
   background: url('../img/portada/logo.png') !important;
   opacity: 0;
-  height: 377px;
+  height: 382px;
   margin: auto;
-  width: 882px;
+  width: 892px;
   max-width: 100%;
 }
 
 @keyframes play {
-	100% { background-position: 0  14326px; opacity: 1}
+	100% { background-position: 0  14516px; opacity: 1}
 }
 @-webkit-keyframes play {
-	100% { background-position: 0  14326px; opacity: 1}
+	100% { background-position: 0  14516px; opacity: 1}
 }
 
 
@@ -982,7 +989,7 @@
 .titleMostrar {
 	-webkit-transform: translateX(0);
 }
-.page4, .page5 {
+/*.page4, .page5 {
   left: 0px !important;
   width: 960px !important;
-}
+}*/
