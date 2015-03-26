@@ -601,6 +601,7 @@
         jQuery('.btnTitle').on('click' , function (e){
           e.preventDefault();
           jQuery(this).hide();
+          jQuery('.btnTitle').parent().addClass('leftWidht');
           jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
           jQuery('.hidden').addClass('ocultar');
           jQuery('.block_left, .block_Right').addClass('block_Mostrar');

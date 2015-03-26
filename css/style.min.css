@@ -67,4 +67,5 @@
 .block_left,.block_Right{bottom:0;height:546px;left:0;margin:auto!important;position:absolute;right:0;top:120px;width:707px;-webkit-transition:-webkit-transform .4s}
 .block_left{-webkit-transform:translateX(-1000px)}.block_Right{-webkit-transform:translateX(1000px)}.block_Mostrar{-webkit-transform:translateX(0)}.hidden{-webkit-transition:-webkit-transform .4s}
 .ocultar{-webkit-transform:translateX(-1000px)}.titleLeft,.titleRight{position:absolute;top:90px;-webkit-transition:-webkit-transform .4s}.titleLeft{right:0;-webkit-transform:translateX(-1000px)}
-.titleRight{left:0;-webkit-transform:translateX(1000px)}.titleMostrar{-webkit-transform:translateX(0)}.delay{-webkit-animation-delay:.7s}
+.titleRight{left:0;-webkit-transform:translateX(1000px)}.titleMostrar{-webkit-transform:translateX(0)}.leftWidht{left:0!important;width:960px!important}
+.page4{width:922px!important}.delay{-webkit-animation-delay:.7s}

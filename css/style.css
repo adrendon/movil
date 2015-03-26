@@ -987,11 +987,13 @@ html,body {
 .titleMostrar {
 	-webkit-transform: translateX(0);
 }
-/*.page4, .page5 {
+.leftWidht {
   left: 0px !important;
   width: 960px !important;
-}*/
-
+}
+.page4 {
+	width: 922px !important;
+}
 .delay {
 	-webkit-animation-delay: 0.7s;
 }
