@@ -73,7 +73,7 @@
               <!-- description for page  -->
               <div class="fb5-page-book">
                  <div id="fb5-cover">
-                  <div class="logo animated animatedLogo" id="logoHome"></div>
+                  <div class="logo animated animatedLogo logoAnimated" id="logoHome"></div>
                     <ul class="imagesHome">
                       <li class="animated seconds fadeInLeft"><a href="#"><img data-src="img/portada/001Left.png"></a></li>
                       <li class="animated seconds fadeInRight"><a href="#"><img data-src="img/portada/001Right.png"></a></li>
@@ -588,10 +588,10 @@
         setTimeout(function(){
           pages.forEach(function(element){
             if (element !== 0) {
-              jQuery('div[page='+ element +'] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown');
+              jQuery('div[page='+ element +'] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown, logoAnimated');
             }
           });
-        }, 3000);
+        }, 6000);
       }
       window.onload = function() {
         disableAnimate();

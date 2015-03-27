@@ -786,24 +786,26 @@ html,body {
 }
 
 .animatedLogo {
-  -webkit-animation-delay: 0.1s;
-  -webkit-animation: play 1.8s steps(44) forwards;
-  /*animation-delay: 0.1s;
-  animation: play 1.8s steps(44) forwards;*/
   background-position: 0 0;
   background: url('../img/portada/logo.png') !important;
-  opacity: 0;
   height: 382px;
   margin: auto;
   width: 888px;
   max-width: 100%;
 }
 
+.logoAnimated {
+	-webkit-animation-delay: 0.4s;
+	-webkit-animation: play 1.8s steps(44) forwards;
+	animation-delay: 0.4s;
+	animation: play 1.8s steps(44) forwards;
+}
+
 @keyframes play {
-	100% { background-position: 0  16808px; opacity: 1}
+	100% { background-position: 0  16808px;}
 }
 @-webkit-keyframes play {
-	100% { background-position: 0  16808px; opacity: 1}
+	100% { background-position: 0  16808px;}
 }
 
 
