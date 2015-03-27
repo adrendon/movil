@@ -1062,7 +1062,7 @@ html,body {
     bottom: 0;
 }
 
-.imgPage001, .imgPage002, .imgPage003, .imgPage004, .imgPage005 {
+.imgPage.imgPage001, .imgPage.imgPage002, .imgPage.imgPage003, .imgPage.imgPage004, .imgPage.imgPage005 {
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
 	background: rgba(3, 36, 65, 0.8) !important;
