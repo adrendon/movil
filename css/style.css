@@ -788,8 +788,8 @@ html,body {
 .animatedLogo {
   -webkit-animation-delay: 0.1s;
   -webkit-animation: play 1.8s steps(44) forwards;
-  animation-delay: 0.1s;
-  animation: play 1.8s steps(44) forwards;
+  /*animation-delay: 0.1s;
+  animation: play 1.8s steps(44) forwards;*/
   background-position: 0 0;
   background: url('../img/portada/logo.png') !important;
   opacity: 0;
