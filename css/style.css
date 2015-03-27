@@ -775,12 +775,17 @@ html,body {
 			background:rgba(0,0,0,0.6);
         }
 
+.seconds {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
 .page001 {
 	background: url('../pages/1.jpg') !important;
 	background-size: cover !important;
 }
 
-.logo {
+.animatedLogo {
   -webkit-animation-delay: 0.1s;
   -webkit-animation: play 1.8s steps(44) forwards;
   animation-delay: 0.1s;
