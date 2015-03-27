@@ -1041,6 +1041,7 @@ html,body {
 }
 
 .btnMenuMostrar {
+	-webkit-transition: -webkit-transform 0.4s;
 	-webkit-transform: translateX(0);
 	position: relative;
 	top: 70%;
@@ -1053,10 +1054,11 @@ html,body {
 }
 
 .imgPage, .imgPage .content {
+-webkit-transition: -webkit-transform 0.4s;
   -webkit-transform: translateX(1000px);
 }
 
-.imgPageMostrar, .contentMostrar {
+.imgPageMostrar {
 	-webkit-transform: translateX(0);
     position: absolute;
     bottom: 0;
@@ -1065,17 +1067,23 @@ html,body {
 .imgPage.imgPage001, .imgPage.imgPage002, .imgPage.imgPage003, .imgPage.imgPage004, .imgPage.imgPage005 {
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
-	background: rgba(3, 36, 65, 0.8) !important;
-	border-radius: 50px !important;
-	bottom: 0;
 	left: 0;
-	margin: auto !important;
 	padding: 0 !important;
-	position: absolute;
-	right: 0;
-	top: 0;
 }
 
-.imgPage001 {
-	background: url('img/8_9/foto_big.jpg');
+.imgPage001.imgPageMostrar{
+	background: url('../img/8_9/resonancia/foto_big.jpg') !important;
+	width: 963px !important;
+	height: 659px !important;
+}
+
+.imgPage001 .contentMostrar,
+.imgPage002 .contentMostrar,
+.imgPage003 .contentMostrar,
+.imgPage004 .contentMostrar,
+.imgPage005 .contentMostrar,
+.imgPage006 .contentMostrar {
+	-webkit-transform: translateX(0);
+	bottom: 0;
+	position: absolute;
 }
