@@ -993,6 +993,7 @@ html,body {
 }
 .titleMostrar {
 	-webkit-transform: translateX(0);
+	cursor: pointer;
 }
 .leftWidht {
   left: 0px !important;
@@ -1005,10 +1006,76 @@ html,body {
 	-webkit-animation-delay: 0.7s;
 }
 .p8 .imgBtnleft{
+	top: 10%;
 	position: absolute;
 	right: 0;
 }
 .p9 .imgBtnRight{
+	top: 10%;
 	position: absolute;
 	left: 0;
+}
+
+.p8 ul, .p9 ul {
+	position: absolute !important;
+	overflow: hidden !important;
+	top: 30%	
+}
+
+.p8 ul {
+	right: 4%;
+}
+
+.p9 ul {
+	left: 4%;
+}
+
+.p8 ul li, .p9 ul li {
+	display: inline-block;
+	vertical-align: top !important;
+	width: 33%;
+}
+
+.btnMenu {
+	-webkit-transform: translateX(-1000px);
+}
+
+.btnMenuMostrar {
+	-webkit-transform: translateX(0);
+	position: relative;
+	top: 70%;
+	z-index: 10000;
+}
+
+.btnMenuMostrar li {
+	width: 100% !important;
+  	margin-left: 5% !important;
+}
+
+.imgPage, .imgPage .content {
+  -webkit-transform: translateX(1000px);
+}
+
+.imgPageMostrar, .contentMostrar {
+	-webkit-transform: translateX(0);
+    position: absolute;
+    bottom: 0;
+}
+
+.imgPage001, .imgPage002, .imgPage003, .imgPage004, .imgPage005 {
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	background: rgba(3, 36, 65, 0.8) !important;
+	border-radius: 50px !important;
+	bottom: 0;
+	left: 0;
+	margin: auto !important;
+	padding: 0 !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.imgPage001 {
+	background: url('img/8_9/foto_big.jpg');
 }
