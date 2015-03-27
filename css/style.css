@@ -995,10 +995,11 @@ html,body {
 	-webkit-transform: translateX(0);
 	cursor: pointer;
 }
-.leftWidht {
+.leftWidht, .leftWidhtPage {
   left: 0px !important;
   width: 960px !important;
 }
+
 .page4 {
 	width: 922px !important;
 }
