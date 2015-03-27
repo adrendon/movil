@@ -143,13 +143,13 @@
                          <!-- description for page from  -->
                          <div class="fb5-page-book page4">
                             <div class="titleLeft">
-                              <img data-src="img/3_4/title_left.png">
+                              <img data-src="img/4_5/title_left.png">
                             </div>
                             <div class="animated seconds fadeInLeft delay">
-                              <img class="hidden" data-src="img/3_4/foto_big.png">
+                              <img class="hidden" data-src="img/4_5/foto_big.png">
                             </div>
                             <div class="block_left">
-                                <img data-src="img/3_4/block_left.png">
+                                <img data-src="img/4_5/block_left.png">
                             </div>
                          </div>
                       </div> <!-- end container page book -->
@@ -164,24 +164,16 @@
                                 <!-- description for page from -->
                                 <div class="fb5-page-book page5">
                                   <div class="titleRight">
-                                    <img data-src="img/3_4/title_right.png" height="89" width="415">
+                                    <img data-src="img/4_5/title_right.png" height="89" width="415">
                                   </div>
                                   <a href="#" class="animated seconds fadeInRight btnTitle delay">
-                                    <img data-src="img/3_4/btn_title.png" height="89" width="831" style="margin-top: 90px;">
+                                    <img data-src="img/4_5/btn_title.png" height="89" width="831" style="margin-top: 90px;">
                                   </a>
                                   <div class="block_Right">
-                                    <img data-src="img/3_4/block_right.png" height="546" width="707">
+                                    <img data-src="img/4_5/block_right.png" height="546" width="707">
                                   </div>
                                 </div>
-
-                                <!-- number page and title for page -->
-                                <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
-                                </div>
-
                           </div> <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 5 -->
 
@@ -197,20 +189,13 @@
 
                                 <!-- description for page from -->
                                 <div class="fb5-page-book">
-                                    <div href="#" class="animated seconds fadeInLeft delay">
-                                    <img data-src="img/4_5/btn_title.png" height="77" width="892" style="margin-top: 90px;">
+                                    <div class="animated seconds fadeInLeft delay">
+                                    <img data-src="img/6_7/btn_title.png" height="77" width="892" style="margin-top: 90px;">
                                   </div>
                                   <div class="blockLeft animated seconds fadeInLeft delay" style="margin-top:130px;">
-                                    <img data-src="img/4_5/block_left.png" height="634" width="822">
+                                    <img data-src="img/6_7/block_left.png" height="634" width="822">
                                   </div>
                                 </div>
-
-                                <!-- number page and title for page -->
-                                <div class="fb5-meta">
-                                        <span class="fb5-num">6</span>
-                                        <span class="fb5-description">Collection 2014</span>
-                                </div>
-
                       </div> <!-- end container page book -->
 
                 </div>
@@ -227,19 +212,10 @@
                              <!-- description for page from -->
                              <div class="fb5-page-book">
                                  <div class="animated seconds fadeInRight delay">
-                            <img data-src="img/4_5/foto_big.png">
+                            <img data-src="img/6_7/foto_big.png">
                           </div>
                                 </div>
-
-                              <!-- number page and title for page -->
-                              <div class="fb5-meta">
-                                      <span class="fb5-description">Collection 2014</span>
-                                      <span class="fb5-num">7</span>
-                              </div>
-
-
                       </div> <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 7-->
 
@@ -247,51 +223,38 @@
 
 
                 <!-- BEGIN PAGE 8 -->
-                <div data-background-image="pages/8.jpg" class="">
+                <div data-background-image="pages/8_9.jpg" class="fb5-double fb5-first">
 
                      <!-- container page book -->
                      <div class="fb5-cont-page-book">
 
                          <!-- description for page  -->
-                        <div class="fb5-page-book">
-
-                            </div>
+                        <div class="fb5-page-book leftWidht">
+                          <div class="animated seconds fadeInLeft delay">
+                            <img class="imgBtnleft" data-src="img/8_9/title_left.png" height="59" width="468">
+                          </div>
+                        </div>
                             <!-- end description for page  -->
-
-                            <!-- number page and title for page -->
-                            <div class="fb5-meta">
-                                    <span class="fb5-num">8</span>
-                                    <span class="fb5-description">Collection 2014</span>
-                             </div>
-
-
                       </div> <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 8 -->
 
 
 
                 <!-- BEGIN PAGE 9 -->
-                <div data-background-image="pages/9.jpg" class="">
+                <div data-background-image="pages/8_9.jpg" class="fb5-double fb5-second">
 
                      <!-- container page book -->
                      <div class="fb5-cont-page-book">
 
                              <!-- description for page from  -->
-                             <div class="fb5-page-book">
-
+                             <div class="fb5-page-book leftWidht">
+                              <div class="animated seconds fadeInRight delay">
+                                <img class="imgBtnRight" data-src="img/8_9/title_right.png" height="59" width="468">
+                              </div>
                              </div>
-
-                             <!-- number page and title for page -->
-                             <div class="fb5-meta">
-                                    <span class="fb5-description">Collection 2014</span>
-                                    <span class="fb5-num">9</span>
-                             </div>
-
                      </div>
                       <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 9 -->
 
@@ -591,7 +554,7 @@
               jQuery('div[page='+ element +'] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown, logoAnimated');
             }
           });
-        }, 6000);
+        }, 2000);
       }
       window.onload = function() {
         disableAnimate();
@@ -604,12 +567,17 @@
             }
           });
         });
-        jQuery('ul.images_2 a img').on('click', function(e){
-          e.preventDefault();
-          var idContent = jQuery(this).parent().attr('href');
-          jQuery('.contenido > div').removeClass('slide');
-          jQuery(idContent).addClass('slide');
-        });
+        jQuery('ul.images_2 a img').on('click', function(e) { 
+          e.preventDefault(); 
+          var idContent = jQuery(this).parent().attr('href'); 
+          var elemContent = jQuery(idContent); 
+          if (elemContent.hasClass('slide')) { 
+              elemContent.toggleClass('slide'); 
+          } else { 
+            jQuery('.contenido > div').removeClass('slide');
+            elemContent.toggleClass('slide'); 
+          } 
+        }); 
         jQuery('#fb5-ajax a').on('click', function(e){
           e.preventDefault();
        });

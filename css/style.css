@@ -949,7 +949,7 @@ html,body {
 }
 
 .img4 {
-	background: url('../img/3_4/foto_big.png');
+	background: url('../img/4_5/foto_big.png');
 }
 
 .block_left, .block_Right {
@@ -1003,4 +1003,12 @@ html,body {
 }
 .delay {
 	-webkit-animation-delay: 0.7s;
+}
+.p8 .imgBtnleft{
+	position: absolute;
+	right: 0;
+}
+.p9 .imgBtnRight{
+	position: absolute;
+	left: 0;
 }
