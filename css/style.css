@@ -777,6 +777,7 @@ html,body {
 .fb5-page-book {
 	height: 1042px !important;
 }
+
 .seconds {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -792,8 +793,8 @@ html,body {
   background: url('../img/portada/logo.png') !important;
   height: 382px;
   margin: auto;
-  width: 888px;
   max-width: 100%;
+  width: 888px;
 }
 
 .logoAnimated {
@@ -806,41 +807,50 @@ html,body {
 @keyframes play {
 	100% { background-position: 0  16808px;}
 }
+
 @-webkit-keyframes play {
 	100% { background-position: 0  16808px;}
 }
 
-
 .imagesHome li {
 	-webkit-animation-delay: 0.1s;
 }
+
 .imagesHome li:nth-child(1) {
 	-webkit-animation-delay: 0.2s;
 }
+
 .imagesHome li:nth-child(2) {
 	-webkit-animation-delay: 0.2s;
 }
+
 .imagesHome li:nth-child(3) {
 	-webkit-animation-delay: 0.3s;
 }
+
 .imagesHome li:nth-child(4) {
 	-webkit-animation-delay: 0.3s;
 }
+
 .imagesHome li:nth-child(5) {
 	-webkit-animation-delay: 0.4s;
 }
 .imagesHome li:nth-child(6) {
 	-webkit-animation-delay: 0.4s;
 }
+
 .imagesHome li:nth-child(7) {
 	-webkit-animation-delay: 0.5s;
 }
+
 .imagesHome li:nth-child(8) {
 	-webkit-animation-delay: 0.6s;
 }
+
 .imagesHome li:nth-child(9) {
 	-webkit-animation-delay: 0.7s;
 }
+
 .imagesHome li:nth-child(10) {
 	-webkit-animation-delay: 0.7s;
 }
@@ -848,11 +858,11 @@ html,body {
 .texto001 {
 	-webkit-animation-delay: 0.8s;
 	-webkit-animation-duration: 1.4s;
-	/*-webkit-animation-iteration-count: infinite;*/
 	bottom: 0;
 	position: absolute;
 	width: 100% !important;
 }
+
 .texto001 h1 {
 	color: #fff !important;
 	font-family: 'champagne' !important;
@@ -863,28 +873,31 @@ html,body {
 }
 
 .images_2 {
+	max-width: 590px !important;
 	overflow: hidden !important;
 	width: 100% !important;
-	max-width: 590px !important;
 }
 
 .images_2 li {
-	/*-webkit-animation-duration: 0.8s;*/
 	-webkit-animation-delay: 0.6s;
 }
 
 .images_2 li:nth-child(1) {
 	-webkit-animation-delay: 0.7s;
 }
+
 .images_2 li:nth-child(2) {
 	-webkit-animation-delay: 0.8s;
 }
+
 .images_2 li:nth-child(3) {
 	-webkit-animation-delay: 0.9s;
 }
+
 .images_2 li:nth-child(4) {
 	-webkit-animation-delay: 1s;
 }
+
 .images_2 li:nth-child(5) {
 	-webkit-animation-delay: 1s;
 }
@@ -966,34 +979,43 @@ html,body {
     width: 707px;
     -webkit-transition: -webkit-transform 0.4s;
 }
+
 .block_left {
     -webkit-transform: translateX(-1000px);
 }
+
 .block_Right {
     -webkit-transform: translateX(1000px);
 }
+
 .blockLeft {
 	-webkit-transition: -webkit-transform 0.4s;
     -webkit-transform: translateX(-1000px);
 }
+
 .block_Mostrar {
 	-webkit-transform: translateX(0);
 }
+
 .hidden {
 	-webkit-transition: -webkit-transform 0.4s;
 }
+
 .ocultar {
 	-webkit-transform: translateX(-1000px);
 }
+
 .titleLeft, .titleRight {
 	position: absolute;
   	top: 90px;
   	-webkit-transition: -webkit-transform 0.4s;
 }
+
 .titleLeft {
 	right: 0;
 	-webkit-transform: translateX(-1000px);
 }
+
 .titleRight {
 	left: 0;
 	-webkit-transform: translateX(1000px);
@@ -1034,6 +1056,7 @@ html,body {
 	right: 0;
 	top: 10%;
 }
+
 .p9 .imgBtnRight{
 	left: 0;
 	position: absolute;
