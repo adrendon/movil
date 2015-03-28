@@ -1056,7 +1056,11 @@ html,body {
 }
 
 .btnMenu {
+	-webkit-transition: -webkit-transform 0.4s;
 	-webkit-transform: translateX(-1000px);
+	position: relative;
+	top: 70%;
+	z-index: 10000;
 }
 
 .btnMenuMostrar {
@@ -1067,7 +1071,7 @@ html,body {
 	z-index: 10000;
 }
 
-.btnMenuMostrar li {
+.btnMenu li, .btnMenuMostrar li {
 	width: 100% !important;
   	margin-left: 5% !important;
 }
@@ -1078,7 +1082,7 @@ html,body {
 }
 
 .imgPageMostrar {
-	-webkit-transform: translateX(0);
+	-webkit-transform: translateX(0) !important;
     position: absolute;
     bottom: 0;
 }

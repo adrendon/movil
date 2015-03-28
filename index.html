@@ -240,42 +240,42 @@
                               <li><a class="imgPage002" href="#tomografia"><img class="animated seconds fadeInDown delay" src="img/8_9/btn002.png" alt="imgbtn002"></a></li>
                               <li><a class="imgPage003" href="#ecografia"><img class="animated seconds fadeInRight delay" src="img/8_9/btn003.png" alt="imgbtn003"></a></li>
                             </ul>
-                            <div class="btnMenu btnMenu001">
+                            <div class="btnMenu">
                               <ul id="resonancia">
                                 <li><a href="#resonanciaMagneticaTeslas"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn001.png" alt="imgbtn004"></a></li>
                                 <li><a href="#resonanciaSimple"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn002.png" alt="imgbtn005"></a></li>
                                 <li><a href="#nuestosEquipos"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn003.png" alt="imgbtn006"></a></li>
                               </ul>
                             </div>
-                            <div class="btnMenu btnMenu002">
+                            <div class="btnMenu">
                               <ul id="tomografia">
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn001.png" alt="imgbtn004"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn002.png" alt="imgbtn005"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn003.png" alt="imgbtn006"></a></li>
                               </ul>
                             </div>
-                            <div class="btnMenu btnMenu003">
+                            <div class="btnMenu">
                               <ul id="ecografia">
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn001.png" alt="imgbtn004"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn002.png" alt="imgbtn005"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn003.png" alt="imgbtn006"></a></li>
                               </ul>
                             </div>
-                            <div class="btnMenu btnMenu004">
+                            <div class="btnMenu">
                               <ul id="mamografia">
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn001.png" alt="imgbtn004"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn002.png" alt="imgbtn005"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn003.png" alt="imgbtn006"></a></li>
                               </ul>
                             </div>
-                            <div class="btnMenu btnMenu005">
+                            <div class="btnMenu">
                               <ul id="densitometria">
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn001.png" alt="imgbtn004"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn002.png" alt="imgbtn005"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn003.png" alt="imgbtn006"></a></li>
                               </ul>
                             </div>
-                            <div class="btnMenu btnMenu006">
+                            <div class="btnMenu">
                               <ul id="rayosx">
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn001.png" alt="imgbtn004"></a></li>
                                 <li><a href="#"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn002.png" alt="imgbtn005"></a></li>
@@ -321,17 +321,17 @@
                                   </div>
                                 </div>
                                 <div class="imgPage">
-                                  <div class="content">
+                                  <div id="mamografia" class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/content.png" alt="imgbig">
                                   </div>
                                 </div>
                                 <div class="imgPage">
-                                  <div class="content">
+                                  <div id="densitometria" class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/content.png" alt="imgbig">
                                   </div>
                                 </div>
                                 <div class="imgPage">
-                                  <img class="animated seconds fadeInRight delay" src="img/8_9/foto_big.jpg" alt="imgbig">
+                                  <img id="rayosx" class="animated seconds fadeInRight delay" src="img/8_9/foto_big.jpg" alt="imgbig">
                                   <div class="content">
                                   </div>
                                 </div>
@@ -655,6 +655,7 @@
           pages.forEach(function(element){
             if (element === 2) {
               jQuery('.contenido > div').removeClass('slide');
+              jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
             }
           });
           hideContebtVentajas();
@@ -670,6 +671,19 @@
             elemContent.toggleClass('slide');
           }
         });
+        jQuery('.serviciosMain li a').on('click', function(e) {
+          e.preventDefault();
+          var idMain = jQuery(this).attr('href');
+          var elementMain = jQuery(idMain).parent();
+          var mainTag = jQuery(this).attr('class');
+          var elementTag = jQuery('.p9 .serviciosMain  ~ .imgPage');
+          if (elementMain.hasClass('btnMenuMostrar')) {
+            elementMain.toggleClass('btnMenuMostrar');
+          } else {
+            jQuery('.btnMenu').removeClass('btnMenuMostrar');
+            elementMain.toggleClass('btnMenuMostrar');
+          }
+        });
         jQuery('.btnInformatica').on('click', function(e) {
           e.preventDefault();
           var idcontenido = jQuery('.blockLeft');
@@ -679,7 +693,6 @@
             jQuery('.contenido > div').removeClass('block_Mostrar');
             idcontenido.toggleClass('block_Mostrar');
           }
-          //jQuery('.blockLeft').addClass('block_Mostrar');
         });
         jQuery('#fb5-ajax a').on('click', function(e){
           e.preventDefault();
