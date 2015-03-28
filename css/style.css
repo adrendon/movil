@@ -1077,7 +1077,7 @@ html,body {
 }
 
 .imgBtnLeftActive, .imgBtnRightActive{
-	top: 2% !important;
+	top: 0.5% !important;
 }
 
 .serviciosMain li:hover img{
