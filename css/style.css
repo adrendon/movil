@@ -854,11 +854,12 @@ html,body {
 	width: 100% !important;
 }
 .texto001 h1 {
-	 font-family: 'champagne' !important;
-	 font-size: 34px !important;
-	 color: #fff !important;
-	 text-transform: uppercase !important;
-	 text-align: center !important;
+	color: #fff !important;
+	font-family: 'champagne' !important;
+	font-size: 34px !important;
+	margin-bottom: 28px !important;
+	text-align: center !important;
+	text-transform: uppercase !important;
 }
 
 .images_2 {
@@ -1045,17 +1046,23 @@ html,body {
 }
 
 .p8 ul {
-	right: 4%;
+	left: 6%;
 }
 
 .p9 ul {
-	left: 4%;
+	left: 3%;
 }
 
 .p8 ul li, .p9 ul li {
 	display: inline-block;
 	vertical-align: top !important;
-	width: 33%;
+	width: 30%;
+	margin-right: 4% !important;
+}
+
+.p8 ul li:last-child, .p9 ul li:last-child {
+  margin-left: 1% !important;
+  margin-right: 0% !important;
 }
 
 .serviciosMain, .serviciosMain li img, .imgBtnLeft, .imgBtnRight {
@@ -1102,7 +1109,7 @@ html,body {
 	-webkit-transform: translateX(-1000px);
 	-webkit-transition: -webkit-transform 0.4s;
 	position: relative;
-	top: 70%;
+	top: 50%;
 	z-index: 10000;
 }
 
@@ -1110,22 +1117,31 @@ html,body {
 	-webkit-transform: translateX(0);
 }
 
-.btnMenu li, .btnMenuMostrar li {
-	margin-left: 5% !important;
+.btnMenu li {
+	-webkit-transition: -webkit-transform 0.4s;
 	width: 100% !important;
+	margin-top: 5% !important;
+}
+
+.btnMenu li:first-child {
+	margin-top: 0 !important;
 }
 
 .imgPage {
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
 	bottom: 0;
+	height: 56% !important;
+	max-width: 100%;
 	position: absolute;
+	right: 0;
 }
 
 .content {
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
 	bottom: 0;
+	height: 100% !important;
 	position: absolute;
 }
 
@@ -1135,36 +1151,30 @@ html,body {
 
 .imgPageMostrar.imgPage001 {
 	background: url('../img/8_9/resonancia/foto_big.jpg') !important;
-	height: 659px !important;
-	width: 963px !important;
+	width: 100% !important;
 }
 
 .imgPageMostrar.imgPage002 {
 	background: url('../img/8_9/tomografia/foto_big.jpg') !important;
-	height: 659px !important;
-	width: 963px !important;
+	width: 100% !important;
 }
 
 .imgPageMostrar.imgPage003 {
 	background: url('../img/8_9/ecografia/foto_big.jpg') !important;
-	height: 659px !important;
-	width: 963px !important;
+	width: 100% !important;
 }
 
 .imgPageMostrar.imgPage004 {
 	background: url('../img/8_9/mamografia/foto_big.jpg') !important;
-	height: 659px !important;
-	width: 963px !important;
+	width: 100% !important;
 }
 
 .imgPageMostrar.imgPage005 {
 	background: url('../img/8_9/densitometria/foto_big.jpg') !important;
-	height: 659px !important;
-	width: 963px !important;
+	width: 100% !important;
 }
 
 .imgPageMostrar.imgPage006 {
 	background: url('../img/8_9/rayosx/foto_big.jpg') !important;
-	height: 659px !important;
-	width: 963px !important;
+	width: 100% !important;
 }
