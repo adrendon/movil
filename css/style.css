@@ -1024,7 +1024,7 @@ html,body {
 .delay {
 	-webkit-animation-delay: 0.7s;
 }
-.p8 .imgBtnleft{
+.p8 .imgBtnLeft{
 	top: 10%;
 	position: absolute;
 	right: 0;
@@ -1038,7 +1038,8 @@ html,body {
 .p8 ul, .p9 ul {
 	position: absolute !important;
 	overflow: hidden !important;
-	top: 30%
+	top: 30%;
+	-webkit-transition: -webkit-transform 0.4s;
 }
 
 .p8 ul {
