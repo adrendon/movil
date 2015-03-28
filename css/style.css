@@ -1000,6 +1000,19 @@ html,body {
 	-webkit-transform: translateX(0);
 	cursor: pointer;
 }
+
+.titleventajas {
+	display: block;
+	-webkit-transition: -webkit-transform 0.4s;
+	-webkit-transform: translateX(1000px);
+}
+
+.titleventajasMostrar {
+	-webkit-transition: -webkit-transform 0.4s;
+	display: block !important;
+	-webkit-transform: translateX(0);
+}
+
 .leftWidht, .leftWidhtPage {
   left: 0px !important;
   width: 960px !important;

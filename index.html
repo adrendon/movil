@@ -645,6 +645,7 @@
         jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
         jQuery('.leftWidht').removeClass('leftWidht');
         jQuery('.btnTitle').removeClass('delay').show();
+        jQuery('.btnTitle').addClass('titleventajasMostrar');
     }
       window.onload = function() {
         disableAnimate();
@@ -685,8 +686,9 @@
        });
         jQuery('.btnTitle').on('click', function(e) {
             e.preventDefault();
-            jQuery(this).hide().parent().parent().addClass('leftWidht');
+            jQuery(this).addClass('titleventajas').parent().parent().addClass('leftWidht');
             jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
+            jQuery('.btnTitle').removeClass('titleventajasMostrar');
             jQuery('.hidden').addClass('ocultar');
             jQuery('.block_left, .block_Right').addClass('block_Mostrar');
         });
