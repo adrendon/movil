@@ -50,22 +50,28 @@
 #fb5 #fb5-about h1{color:#64c8d3;font-family:Arial;font-size:26px}#fb5 #fb5-about h2{color:#64c8d3;font-family:Arial;font-size:24px}#fb5-about h3{color:#64c8d3;font-family:Arial;font-size:22px}
 #fb5 #fb5-about h4{color:#64c8d3;font-family:Arial}#fb5 #fb5-about h5{color:#64c8d3;font-family:Arial;font-size:18px}#fb5 #fb5-about h6{color:#64c8d3;font-family:Arial;font-size:16px}
 #fb5 #fb5-button-back{background-color:#64c8d3;color:#fff}#fb5 #fb5-button-back:hover{color:#64c8d3;background-color:#fff}#fb5 .fb5-overlay{background:rgba(0,0,0,0.6)}
-.page001{background:url('../pages/1.jpg')!important;background-size:cover!important}.logo{-webkit-animation-delay:.1s;-webkit-animation:play 1.8s steps(44) forwards;animation-delay:.1s;animation:play 1.8s steps(44) forwards;background-position:0 0;background:url('../img/portada/logo.png')!important;opacity:0;height:382px;margin:auto;width:888px;max-width:100%}
-@keyframes play{100%{background-position:0 16808px;opacity:1}}@-webkit-keyframes play{100%{background-position:0 16808px;opacity:1}}.imagesHome li{-webkit-animation-delay:.1s}
-.imagesHome li:nth-child(1){-webkit-animation-delay:.2s}.imagesHome li:nth-child(2){-webkit-animation-delay:.2s}.imagesHome li:nth-child(3){-webkit-animation-delay:.3s}
-.imagesHome li:nth-child(4){-webkit-animation-delay:.3s}.imagesHome li:nth-child(5){-webkit-animation-delay:.4s}.imagesHome li:nth-child(6){-webkit-animation-delay:.4s}
-.imagesHome li:nth-child(7){-webkit-animation-delay:.5s}.imagesHome li:nth-child(8){-webkit-animation-delay:.6s}.imagesHome li:nth-child(9){-webkit-animation-delay:.7s}
-.imagesHome li:nth-child(10){-webkit-animation-delay:.7s}.texto001{-webkit-animation-delay:.8s;-webkit-animation-duration:1.4s;bottom:0;position:absolute;width:100%!important}
-.texto001 h1{font-family:'champagne'!important;font-size:34px!important;color:#fff!important;text-transform:uppercase!important;text-align:center!important}
+.seconds{-webkit-animation-duration:1s;animation-duration:1s}.page001{background:url('../pages/1.jpg')!important;background-size:cover!important}
+.animatedLogo{background-position:0 0;background:url('../img/portada/logo.png')!important;height:382px;margin:auto;width:888px;max-width:100%}
+.logoAnimated{-webkit-animation-delay:.4s;-webkit-animation:play 1.8s steps(44) forwards;animation-delay:.4s;animation:play 1.8s steps(44) forwards}@keyframes play{100%{background-position:0 16808px}
+}@-webkit-keyframes play{100%{background-position:0 16808px}}.imagesHome li{-webkit-animation-delay:.1s}.imagesHome li:nth-child(1){-webkit-animation-delay:.2s}
+.imagesHome li:nth-child(2){-webkit-animation-delay:.2s}.imagesHome li:nth-child(3){-webkit-animation-delay:.3s}.imagesHome li:nth-child(4){-webkit-animation-delay:.3s}
+.imagesHome li:nth-child(5){-webkit-animation-delay:.4s}.imagesHome li:nth-child(6){-webkit-animation-delay:.4s}.imagesHome li:nth-child(7){-webkit-animation-delay:.5s}
+.imagesHome li:nth-child(8){-webkit-animation-delay:.6s}.imagesHome li:nth-child(9){-webkit-animation-delay:.7s}.imagesHome li:nth-child(10){-webkit-animation-delay:.7s}
+.texto001{-webkit-animation-delay:.8s;-webkit-animation-duration:1.4s;bottom:0;position:absolute;width:100%!important}.texto001 h1{font-family:'champagne'!important;font-size:34px!important;color:#fff!important;text-transform:uppercase!important;text-align:center!important}
 .images_2{overflow:hidden!important;width:100%!important;max-width:590px!important}.images_2 li{-webkit-animation-delay:.6s}.images_2 li:nth-child(1){-webkit-animation-delay:.7s}
 .images_2 li:nth-child(2){-webkit-animation-delay:.8s}.images_2 li:nth-child(3){-webkit-animation-delay:.9s}.images_2 li:nth-child(4){-webkit-animation-delay:1s}
 .images_2 li:nth-child(5){-webkit-animation-delay:1s}#fb5 .fb5-page-book ul li a{display:block}.contenido{width:100%}.content001,.content002,.content003,.content004,.content005{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;background:rgba(3,36,65,0.8)!important;border-radius:50px!important;bottom:0;left:0;margin:auto!important;padding:0!important;position:absolute;right:0;top:0}
 .content001{background:url('../img/2_3/quienes_somos.png') no-repeat!important;width:872px!important;height:518px!important}.content002{background:url('../img/2_3/reconocimientos.png') no-repeat!important;width:912px!important;height:262px!important}
 .content003{background:url('../img/2_3/mision.png') no-repeat!important;width:911px!important;height:262px!important}.content004{background:url('../img/2_3/vision.png') no-repeat!important;width:911px!important;height:228px!important}
 .content005{background:url('../img/2_3/valores.png') no-repeat!important;width:508px!important;height:393px!important}.contenido .slide{-webkit-transform:translateX(0)}
-.contenido p{color:#fff!important;font-family:'champagne'!important;font-size:34px!important}.img4{background:url('../img/3_4/foto_big.png')}
+.contenido p{color:#fff!important;font-family:'champagne'!important;font-size:34px!important}.img4{background:url('../img/4_5/foto_big.png')}
 .block_left,.block_Right{bottom:0;height:546px;left:0;margin:auto!important;position:absolute;right:0;top:120px;width:707px;-webkit-transition:-webkit-transform .4s}
 .block_left{-webkit-transform:translateX(-1000px)}.block_Right{-webkit-transform:translateX(1000px)}.block_Mostrar{-webkit-transform:translateX(0)}.hidden{-webkit-transition:-webkit-transform .4s}
 .ocultar{-webkit-transform:translateX(-1000px)}.titleLeft,.titleRight{position:absolute;top:90px;-webkit-transition:-webkit-transform .4s}.titleLeft{right:0;-webkit-transform:translateX(-1000px)}
-.titleRight{left:0;-webkit-transform:translateX(1000px)}.titleMostrar{-webkit-transform:translateX(0)}.leftWidht{left:0!important;width:960px!important}
-.page4{width:922px!important}.delay{-webkit-animation-delay:.7s}
+.titleRight{left:0;-webkit-transform:translateX(1000px)}.titleMostrar{-webkit-transform:translateX(0);cursor:pointer}.leftWidht,.leftWidhtPage{left:0!important;width:960px!important}
+.page4{width:922px!important}.delay{-webkit-animation-delay:.7s}.p8 .imgBtnleft{top:10%;position:absolute;right:0}.p9 .imgBtnRight{top:10%;position:absolute;left:0}
+.p8 ul,.p9 ul{position:absolute!important;overflow:hidden!important;top:30%}.p8 ul{right:4%}.p9 ul{left:4%}.p8 ul li,.p9 ul li{display:inline-block;vertical-align:top!important;width:33%}
+.btnMenu{-webkit-transform:translateX(-1000px)}.btnMenuMostrar{-webkit-transition:-webkit-transform .4s;-webkit-transform:translateX(0);position:relative;top:70%;z-index:10000}
+.btnMenuMostrar li{width:100%!important;margin-left:5%!important}.imgPage,.imgPage .content{-webkit-transition:-webkit-transform .4s;-webkit-transform:translateX(1000px)}
+.imgPageMostrar{-webkit-transform:translateX(0);position:absolute;bottom:0}.imgPage.imgPage001,.imgPage.imgPage002,.imgPage.imgPage003,.imgPage.imgPage004,.imgPage.imgPage005{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;left:0;padding:0!important}
+.imgPage001.imgPageMostrar{background:url('../img/8_9/resonancia/foto_big.jpg')!important;width:963px!important;height:659px!important}.imgPage001 .contentMostrar,.imgPage002 .contentMostrar,.imgPage003 .contentMostrar,.imgPage004 .contentMostrar,.imgPage005 .contentMostrar,.imgPage006 .contentMostrar{-webkit-transform:translateX(0);bottom:0;position:absolute}
