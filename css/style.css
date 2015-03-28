@@ -1039,7 +1039,6 @@ html,body {
 	position: absolute !important;
 	overflow: hidden !important;
 	top: 30%;
-	-webkit-transition: -webkit-transform 0.4s;
 }
 
 .p8 ul {
@@ -1054,6 +1053,36 @@ html,body {
 	display: inline-block;
 	vertical-align: top !important;
 	width: 33%;
+}
+
+.serviciosMain, .imgBtnLeft, .imgBtnRight {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.serviciosMainActive {
+	top: 10% !important;
+}
+
+.imgBtnLeftActive, .imgBtnRightActive{
+	top: 2% !important;
+}
+
+.serviciosMainActive li img {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.serviciosMainActive .serviceActive img {
+	  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  transform: scale(2.1);
 }
 
 .btnMenu {

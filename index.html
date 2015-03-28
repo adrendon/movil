@@ -687,7 +687,7 @@
 
       function fnc_servicios() {
         jQuery('.serviciosMain a img').on('click', function (e) {
-        e.preventDefault();
+          e.preventDefault();
           var $this = jQuery(this);
 
           var idSubMenu = $this.parent().attr('href');
@@ -700,20 +700,25 @@
               jQuery('.btnMenu').removeClass('btnMenuMostrar');
               subMenu.addClass('btnMenuMostrar');
           }
-        });
+          jQuery('li[data-item]').removeClass('serviceActive');
+          $this.parent().parent().addClass('serviceActive');
+          jQuery('.serviciosMain').addClass('serviciosMainActive');
+          jQuery('.imgBtnLeft').addClass('imgBtnLeftActive');
+          jQuery('.imgBtnRight').addClass('imgBtnRightActive');
+      });
 
-        jQuery('.btnMenu li img').on('click', function (e) {
-          e.preventDefault();
-          var $this = jQuery(this);
-          var idElemContent = $this.parent().attr('href');
-          var elemContent = jQuery(idElemContent);
-            if (elemContent.hasClass('contentMostrar')) {
-                elemContent.removeClass('contentMostrar');
-            } else {
-                elemContent.siblings().removeClass('contentMostrar');
-                elemContent.addClass('contentMostrar');
-            }
-        });
+      jQuery('.btnMenu li img').on('click', function (e) {
+        e.preventDefault();
+        var $this = jQuery(this);
+        var idElemContent = $this.parent().attr('href');
+        var elemContent = jQuery(idElemContent);
+          if (elemContent.hasClass('contentMostrar')) {
+              elemContent.removeClass('contentMostrar');
+          } else {
+              elemContent.siblings().removeClass('contentMostrar');
+              elemContent.addClass('contentMostrar');
+          }
+      });
         swMenuServicios = true;
       }
 
