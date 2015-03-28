@@ -774,7 +774,9 @@ html,body {
 		#fb5 .fb5-overlay {
 			background:rgba(0,0,0,0.6);
         }
-
+.fb5-page-book {
+	height: 1042px !important;
+}
 .seconds {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -1021,23 +1023,24 @@ html,body {
 .page4 {
 	width: 922px !important;
 }
+
 .delay {
 	-webkit-animation-delay: 0.7s;
 }
+
 .p8 .imgBtnLeft{
-	top: 10%;
 	position: absolute;
 	right: 0;
+	top: 10%;
 }
 .p9 .imgBtnRight{
-	top: 10%;
-	position: absolute;
 	left: 0;
+	position: absolute;
+	top: 10%;
 }
 
 .p8 ul, .p9 ul {
 	position: absolute !important;
-	overflow: hidden !important;
 	top: 30%;
 }
 
@@ -1055,10 +1058,10 @@ html,body {
 	width: 33%;
 }
 
-.serviciosMain, .imgBtnLeft, .imgBtnRight {
-  -webkit-transition: all 1s ease-in-out;
+.serviciosMain, .serviciosMain li img, .imgBtnLeft, .imgBtnRight {
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
@@ -1070,24 +1073,34 @@ html,body {
 	top: 2% !important;
 }
 
+.serviciosMain li:hover img{
+	transform: scale(1.1);
+}
+
+.serviciosMainActive li:hover img {
+	transform: scale(1.1);
+}
+
 .serviciosMainActive li img {
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	max-width: 80%;
+	transition: all 1s ease-in-out;
 }
 
 .serviciosMainActive .serviceActive img {
-	  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  transform: scale(2.1);
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	max-width: 100%;
+	transform: scale(1.1);
+	transition: all 1s ease-in-out;
 }
 
 .btnMenu {
-	-webkit-transition: -webkit-transform 0.4s;
 	-webkit-transform: translateX(-1000px);
+	-webkit-transition: -webkit-transform 0.4s;
 	position: relative;
 	top: 70%;
 	z-index: 10000;
@@ -1098,8 +1111,8 @@ html,body {
 }
 
 .btnMenu li, .btnMenuMostrar li {
+	margin-left: 5% !important;
 	width: 100% !important;
-  	margin-left: 5% !important;
 }
 
 .imgPage {
