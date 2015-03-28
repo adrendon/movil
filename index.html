@@ -671,36 +671,36 @@
             elemContent.toggleClass('slide');
           }
         });
-        // jQuery('.serviciosMain li a').on('click', function(e) {
-        //   e.preventDefault();
-        //   var idMain = jQuery(this).attr('href');
-        //   var elementMain = jQuery(idMain).parent();
-        //   //var mainTag = jQuery(this).attr('class');
-        //   var elementTag = jQuery('.p9 .serviciosMain  ~ .imgPage');
-        //   if (elementMain.hasClass('btnMenuMostrar')) {
-        //     elementMain.toggleClass('btnMenuMostrar');
-        //   } else {
-        //     jQuery('.btnMenu').removeClass('btnMenuMostrar');
-        //     elementMain.toggleClass('btnMenuMostrar');
-        //   }
-        // });
-
         jQuery('.serviciosMain li a').on('click', function(e) {
-            e.preventDefault();
-            var idMain = jQuery(this).attr('href');
-            var classMain = jQuery(this).attr('class');
-            var elementMain = jQuery(idMain).parent();
-            var elementTag = jQuery('.p9').find('.imgPage');
-            if (elementMain.hasClass('btnMenuMostrar')) {
-                elementMain.removeClass('btnMenuMostrar');
-                elementTag.removeClass(classMain);
-                jQuery('.btnMenu').removeClass(classMain);
-            } else {
-                elementMain.addClass('btnMenuMostrar');
-                elementTag.addClass(classMain);
-                elementMain.addClass('btnMenuMostrar');
-            }
+          e.preventDefault();
+          var idMain = jQuery(this).attr('href');
+          var elementMain = jQuery(idMain).parent();
+          //var mainTag = jQuery(this).attr('class');
+          //var elementTag = jQuery('.p9 .serviciosMain  ~ .imgPage');
+          if (elementMain.hasClass('btnMenuMostrar')) {
+            elementMain.toggleClass('btnMenuMostrar');
+          } else {
+            jQuery('.btnMenu').removeClass('btnMenuMostrar');
+            elementMain.toggleClass('btnMenuMostrar');
+          }
         });
+
+        // jQuery('.serviciosMain li a').on('click', function(e) {
+        //     e.preventDefault();
+        //     var idMain = jQuery(this).attr('href');
+        //     var classMain = jQuery(this).attr('class');
+        //     var elementMain = jQuery(idMain).parent();
+        //     var elementTag = jQuery('.p9').find('.imgPage');
+        //     if (elementMain.hasClass('btnMenuMostrar')) {
+        //         elementMain.removeClass('btnMenuMostrar');
+        //         elementTag.removeClass(classMain);
+        //         jQuery('.btnMenu').removeClass(classMain);
+        //     } else {
+        //         elementMain.addClass('btnMenuMostrar');
+        //         elementTag.addClass(classMain);
+        //         elementMain.addClass('btnMenuMostrar');
+        //     }
+        // });
         jQuery('.btnInformatica').on('click', function(e) {
           e.preventDefault();
           var idcontenido = jQuery('.blockLeft');
