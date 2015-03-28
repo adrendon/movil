@@ -304,7 +304,7 @@
                                   <li data-item="cinco"><a class="imgPage005" href="#densitometria"><img class="animated seconds fadeInDown delay" src="img/8_9/btn005.png" alt="imgbtn005"></a></li>
                                   <li data-item="seis"><a class="imgPage006" href="#rayosx"><img class="animated seconds fadeInRight delay" src="img/8_9/btn006.png" alt="imgbtn006"></a></li>
                                 </ul>
-                                <div data-item="uno" class="fadeImg seconds delay imgPage">
+                                <div data-item="uno" class="seconds imgPage">
                                   <div id="resonanciaMagneticaTeslas" class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content001.png" alt="imgbig">
                                   </div>
@@ -315,7 +315,7 @@
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content003.png" alt="imgbig">
                                   </div>
                                 </div>
-                                <div data-item="dos" class="fadeImg seconds delay imgPage">
+                                <div data-item="dos" class="seconds imgPage">
                                   <div class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content001.png" alt="imgbig">
                                   </div>
@@ -326,7 +326,7 @@
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content003.png" alt="imgbig">
                                   </div>
                                 </div>
-                                <div data-item="tres" class="fadeImg seconds delay imgPage">
+                                <div data-item="tres" class="seconds imgPage">
                                   <div class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content001.png" alt="imgbig">
                                   </div>
@@ -337,7 +337,7 @@
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content003.png" alt="imgbig">
                                   </div>
                                 </div>
-                                <div data-item="cuatro" class="fadeImg seconds delay imgPage">
+                                <div data-item="cuatro" class="seconds imgPage">
                                   <div class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content001.png" alt="imgbig">
                                   </div>
@@ -348,7 +348,7 @@
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content003.png" alt="imgbig">
                                   </div>
                                 </div>
-                                <div data-item="cinco" class="fadeImg seconds delay imgPage">
+                                <div data-item="cinco" class="seconds imgPage">
                                   <div class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content001.png" alt="imgbig">
                                   </div>
@@ -359,7 +359,7 @@
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content003.png" alt="imgbig">
                                   </div>
                                 </div>
-                                <div data-item="seis" class="fadeImg seconds delay imgPage">
+                                <div data-item="seis" class="seconds imgPage">
                                   <div class="content">
                                      <img class="animated seconds fadeInRight delay" src="img/8_9/tomografia/content001.png" alt="imgbig">
                                   </div>
@@ -664,100 +664,128 @@
     })
     </script>
     <script type="text/javascript">
-      function disableAnimate() {
-        var pages = jQuery('#fb5-book').turn('view');
-        setTimeout(function(){
-          pages.forEach(function(element){
-            if (element !== 0) {
-              jQuery('div[page='+ element +'] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown logoAnimated');
+     var swMenuServicios = false;
+            function disableAnimate() {
+                var pages = jQuery('#fb5-book').turn('view');
+                setTimeout(function () {
+                    pages.forEach(function (element) {
+                        if (element !== 0) {
+                            jQuery('div[page=' + element + '] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown logoAnimated');
+                        }
+                    });
+                }, 4000);
             }
-          });
-        }, 4000);
-      }
-      function hideContebtVentajas () {
-        jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
-        jQuery('.hidden').removeClass('ocultar');
-        jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
-        jQuery('.leftWidht').removeClass('leftWidht');
-        jQuery('.btnTitle').removeClass('delay').show();
-        jQuery('.btnTitle').addClass('titleventajasMostrar');
-    }
-      window.onload = function() {
-        disableAnimate();
-        jQuery('.prev, .next').on('click', function(){
-          disableAnimate();
-          var pages = jQuery('#fb5-book').turn('view');
-          pages.forEach(function(element){
-            if (element === 2) {
-              jQuery('.contenido > div').removeClass('slide');
-              jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
+            function hideContebtVentajas() {
+                jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
+                jQuery('.hidden').removeClass('ocultar');
+                jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
+                jQuery('.leftWidht').removeClass('leftWidht');
+                jQuery('.btnTitle').removeClass('delay').show();
+                jQuery('.btnTitle').addClass('titleventajasMostrar');
             }
-          });
-          hideContebtVentajas();
-        });
-        jQuery('ul.images_2 a img').on('click', function(e) {
-          e.preventDefault();
-          var idContent = jQuery(this).parent().attr('href');
-          var elemContent = jQuery(idContent);
-          if (elemContent.hasClass('slide')) {
-              elemContent.toggleClass('slide');
-          } else {
-            jQuery('.contenido > div').removeClass('slide');
-            elemContent.toggleClass('slide');
-          }
-        });
-        var imgFondo;
-        jQuery('.serviciosMain a img').on('click', function (e) {
-            e.preventDefault();
-            var $this = jQuery(this);
-            var idSubMenu = $this.parent().attr('href');
-            imgFondo = $this.parent().attr('class');
-            var subMenu = jQuery(idSubMenu).parent();
-            if (!subMenu.hasClass('btnMenuMostrar')) {
-                jQuery('.btnMenu').removeClass('btnMenuMostrar');
-                jQuery('.imgPageMostrar').removeClass('imgPageMostrar').addClass('imgPage');
-                subMenu.addClass('btnMenuMostrar');
-            }
-        });
 
-        jQuery('.btnMenu li img').on('click', function (e) {
-            e.preventDefault();
-            var $this = jQuery(this);
-            var idElemContent = $this.parent().attr('href');
-            var elemContent = jQuery(idElemContent).parent();
-            if (elemContent.hasClass('imgPageMostrar')) {
-                elemContent.removeClass('imgPageMostrar contentMostrar').addClass('imgPage '+ imgFondo);
-            } else {
-                jQuery('.imgPageMostrar').removeClass('imgPageMostrar contentMostrar').addClass('imgPage '+ imgFondo);
-                elemContent.removeClass('imgPage').addClass('imgPageMostrar contentMostrar '+ imgFondo);
-            }
-        });
+            function fnc_servicios() {
+                jQuery('.serviciosMain a img').on('click', function (e) {
+                    e.preventDefault();
+                    var $this = jQuery(this);
 
-        jQuery('.btnInformatica').on('click', function(e) {
-          e.preventDefault();
-          var idcontenido = jQuery('.blockLeft');
-          if (idcontenido.hasClass('block_Mostrar')) {
-              idcontenido.toggleClass('block_Mostrar');
-          } else {
-            jQuery('.contenido > div').removeClass('block_Mostrar');
-            idcontenido.toggleClass('block_Mostrar');
-          }
-        });
-        jQuery('#fb5-ajax a').on('click', function(e){
-          e.preventDefault();
-       });
-        jQuery('.btnTitle').on('click', function(e) {
-            e.preventDefault();
-            jQuery(this).addClass('titleventajas').parent().parent().addClass('leftWidht');
-            jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
-            jQuery('.btnTitle').removeClass('titleventajasMostrar');
-            jQuery('.hidden').addClass('ocultar');
-            jQuery('.block_left, .block_Right').addClass('block_Mostrar');
-        });
-        jQuery('.titleLeft img, .titleRight img').on('click', function(){
-            hideContebtVentajas();
-        });
-      };
+                    var idSubMenu = $this.parent().attr('href');
+                    imgFondo = $this.parent().attr('class');
+                    var indexMenu = $this.parent().parent().attr('data-item');
+                    var subMenu = jQuery(idSubMenu).parent();
+                    jQuery('.imgPage').removeClass('imgPageMostrar');
+                    jQuery('.imgPage[data-item="' + indexMenu + '"]').addClass('imgPageMostrar ' + imgFondo);
+                    if (!subMenu.hasClass('btnMenuMostrar')) {
+                        jQuery('.btnMenu').removeClass('btnMenuMostrar');
+                        //jQuery('.imgPageMostrar').removeClass('imgPageMostrar').addClass('imgPage');
+                        subMenu.addClass('btnMenuMostrar');
+                    }
+                });
+
+                jQuery('.btnMenu li img').on('click', function (e) {
+                    e.preventDefault();
+                    var $this = jQuery(this);
+                    var idElemContent = $this.parent().attr('href');
+                    var elemContent = jQuery(idElemContent);
+                    var elemContentParent = elemContent.parent();
+                    if (elemContentParent.hasClass('imgPageMostrar')) {
+                        if (elemContent.hasClass('contentMostrar')) {
+                            elemContent.removeClass('contentMostrar');
+                        } else {
+                            elemContent.addClass('contentMostrar');
+                        }
+                    } else {
+                        jQuery('.imgPageMostrar').removeClass('imgPageMostrar').find('div').first().removeClass('contentMostrar');
+                        elemContentParent.addClass('imgPageMostrar ' + imgFondo);
+                        elemContent.addClass('contentMostrar');
+                    }
+                });
+                swMenuServicios = true;
+            }
+
+            window.onload = function () {
+                disableAnimate();
+                if (jQuery('.serviciosMain a img')[0]) {
+                    fnc_servicios();
+                }
+
+                jQuery('.prev, .next').on('click', function () {
+                    disableAnimate();
+                    //          if (jQuery('.serviciosMain a img')[0] && swMenuServicios !== false) {
+                    //                fnc_servicios();
+                    //            }
+
+                    var pages = jQuery('#fb5-book').turn('view');
+                    pages.forEach(function (element) {
+                        if (element === 2) {
+                            jQuery('.contenido > div').removeClass('slide');
+                            jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
+                        }
+                        if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
+                            fnc_servicios();
+                        }
+                    });
+                    hideContebtVentajas();
+                });
+                jQuery('ul.images_2 a img').on('click', function (e) {
+                    e.preventDefault();
+                    var idContent = jQuery(this).parent().attr('href');
+                    var elemContent = jQuery(idContent);
+                    if (elemContent.hasClass('slide')) {
+                        elemContent.toggleClass('slide');
+                    } else {
+                        jQuery('.contenido > div').removeClass('slide');
+                        elemContent.toggleClass('slide');
+                    }
+                });
+                var imgFondo
+
+
+                jQuery('.btnInformatica').on('click', function (e) {
+                    e.preventDefault();
+                    var idcontenido = jQuery('.blockLeft');
+                    if (idcontenido.hasClass('block_Mostrar')) {
+                        idcontenido.toggleClass('block_Mostrar');
+                    } else {
+                        jQuery('.contenido > div').removeClass('block_Mostrar');
+                        idcontenido.toggleClass('block_Mostrar');
+                    }
+                });
+                jQuery('#fb5-ajax a').on('click', function (e) {
+                    e.preventDefault();
+                });
+                jQuery('.btnTitle').on('click', function (e) {
+                    e.preventDefault();
+                    jQuery(this).addClass('titleventajas').parent().parent().addClass('leftWidht');
+                    jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
+                    jQuery('.btnTitle').removeClass('titleventajasMostrar');
+                    jQuery('.hidden').addClass('ocultar');
+                    jQuery('.block_left, .block_Right').addClass('block_Mostrar');
+                });
+                jQuery('.titleLeft img, .titleRight img').on('click', function () {
+                    hideContebtVentajas();
+                });
+            };
     </script>
 </body>
 </html>
