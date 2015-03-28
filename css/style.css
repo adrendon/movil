@@ -1101,6 +1101,7 @@ html,body {
 
 .imgBtnLeftActive, .imgBtnRightActive{
 	top: 0.5% !important;
+	cursor: pointer;
 }
 
 .serviciosMain li:hover img{
