@@ -1064,11 +1064,7 @@ html,body {
 }
 
 .btnMenuMostrar {
-	-webkit-transition: -webkit-transform 0.4s;
 	-webkit-transform: translateX(0);
-	position: relative;
-	top: 70%;
-	z-index: 10000;
 }
 
 .btnMenu li, .btnMenuMostrar li {
@@ -1076,37 +1072,61 @@ html,body {
   	margin-left: 5% !important;
 }
 
-.imgPage, .imgPage .content {
--webkit-transition: -webkit-transform 0.4s;
-  -webkit-transform: translateX(1000px);
-}
-
-.imgPageMostrar {
-	-webkit-transform: translateX(0) !important;
-    position: absolute;
-    bottom: 0;
-}
-
-.imgPage.imgPage001, .imgPage.imgPage002, .imgPage.imgPage003, .imgPage.imgPage004, .imgPage.imgPage005 {
+.imgPage {
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
-	left: 0;
-	padding: 0 !important;
-}
-
-.imgPage001.imgPageMostrar{
-	background: url('../img/8_9/resonancia/foto_big.jpg') !important;
-	width: 963px !important;
-	height: 659px !important;
-}
-
-.imgPage001 .contentMostrar,
-.imgPage002 .contentMostrar,
-.imgPage003 .contentMostrar,
-.imgPage004 .contentMostrar,
-.imgPage005 .contentMostrar,
-.imgPage006 .contentMostrar {
-	-webkit-transform: translateX(0);
 	bottom: 0;
 	position: absolute;
+}
+
+.content {
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	bottom: 0;
+	position: absolute;
+}
+
+.imgPageMostrar, .contentMostrar  {
+	-webkit-transform: translateX(0);s
+}
+
+.imgPageMostrar.imgPage001 {
+	background: url('../img/8_9/resonancia/foto_big.jpg') !important;
+	height: 659px !important;
+	width: 963px !important;
+}
+
+@-webkit-keyframes fadeImg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeImg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeImg {
+  -webkit-animation-name: fadeImg;
+  animation-name: fadeImg;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
