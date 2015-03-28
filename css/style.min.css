@@ -75,6 +75,4 @@
 .p8 ul li,.p9 ul li{display:inline-block;vertical-align:top!important;width:33%}.btnMenu{-webkit-transition:-webkit-transform .4s;-webkit-transform:translateX(-1000px);position:relative;top:70%;z-index:10000}
 .btnMenuMostrar{-webkit-transform:translateX(0)}.btnMenu li,.btnMenuMostrar li{width:100%!important;margin-left:5%!important}.imgPage{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;bottom:0;position:absolute}
 .content{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;bottom:0;position:absolute}.imgPageMostrar,.contentMostrar{-webkit-transform:translateX(0);s}
-.imgPageMostrar.imgPage001{background:url('../img/8_9/resonancia/foto_big.jpg')!important;height:659px!important;width:963px!important}@-webkit-keyframes fadeImg{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}
-100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeImg{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}
-100%{opacity:1;-webkit-transform:none;transform:none}}.fadeImg{-webkit-animation-name:fadeImg;animation-name:fadeImg;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.imgPageMostrar.imgPage001{background:url('../img/8_9/resonancia/foto_big.jpg')!important;height:659px!important;width:963px!important}.fadeImg{-webkit-animation-name:fadeInRight;animation-name:fadeInRight;-webkit-animation-fill-mode:both;animation-fill-mode:both}

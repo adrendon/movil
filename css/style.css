@@ -1096,37 +1096,9 @@ html,body {
 	width: 963px !important;
 }
 
-@-webkit-keyframes fadeImg {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeImg {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
 .fadeImg {
-  -webkit-animation-name: fadeImg;
-  animation-name: fadeImg;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
