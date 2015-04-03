@@ -1311,28 +1311,26 @@ html,body {
 	-webkit-animation-delay: 1.7s;
 }
 
-.galleryContent {
+.btnMenuGallery {
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
 	position: absolute;
-  	top: 13%;
+	top: 13%;
 }
 
-.galleryContent .btnMenuGallery li {
+.btnMenuGallery li {
 	display: inline-block;
 	margin-right: 5px !important;
 }
 
-.imagesGalleryBig {
-  position: absolute;
-  top: 28%;
-  right: 0;
-}
-
 .contentGallery {
-  position: absolute;
-  right: 0;
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	position: absolute;
+	right: 2%;
+	top: 28%;
 }
 
-.contentGallery img {
-  right: 2%;
-  position: relative;
+.btnMenuGalleryMostrar, .contentGalleryMostrar {
+	-webkit-transform: translateX(0);
 }
