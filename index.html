@@ -652,6 +652,7 @@
       var idBg = jQuery('.bg');
       var delay = 400;
       var delayTwo = 800;
+      var clear = 0;
       function disableAnimate() {
         var pages = jQuery('#fb5-book').turn('view');
         setTimeout(function () {
@@ -715,18 +716,18 @@
         swMenuServicios = true;
       }
       function fnc_gallery() {
-        jQuery('.imagesGallery li a img').on('click', function (e) {
+        jQuery('.imagesGallery a img').on('click', function (e) {
           e.preventDefault();
           var $this = jQuery(this);
           var idSubMenuGallery = $this.parent().attr('href');
-          //classGallery = $this.parent().attr('class');
+          classGallery = $this.parent().attr('class');
           var indexMenuGallery = $this.parent().parent().attr('data-item');
           var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
           jQuery('.contentGallery').removeClass('contentGalleryMostrar');
-          jQuery('.contentGallery[data-item="' + indexMenuGallery + '"]').addClass('contentGalleryMostrar '); //+ classGallery);
-          if (!subMenuGallery.hasClass('btnMenuGalleryMostrar')) {
-            jQuery('.btnMenu').removeClass('btnMenuGalleryMostrar');
-            subMenuGallery.addClass('btnMenuGalleryMostrar');
+          jQuery('.contentGallery[data-item="' + indexMenuGallery + '"]').addClass('contentGalleryMostrar ');
+          if (!subMenuGallery.hasClass('btnMenuGalleryMostrar ' + classGallery)) {
+            jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar ' + classGallery);
+            subMenuGallery.addClass('btnMenuGalleryMostrar ' + classGallery);
           }
         });
         jQuery('.btnMenuGallery ul li a img').on('click', function (e) {
@@ -801,14 +802,17 @@
         jQuery('.imgBtnTen').on('click', function (e) {
           e.preventDefault();
           idBgDown.toggleClass('bgDownMostrar');
-          setTimeout(function (){
+          clear = setTimeout(function (){
             idTitulo.toggleClass('tituloMostrar');
           }, delay);
-          setTimeout(function (){
+          clear = setTimeout(function (){
             idBg.toggleClass('bgMostrar');
           }, delayTwo);
+          clearTimeout(clear);
         });
-        jQuery('.tituloMostrar').on('click', function() {});
+        jQuery('.tituloMostrar').on('click', function() {
+          console.log('test');
+        });
       };
     </script>
   </body>
