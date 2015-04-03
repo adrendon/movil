@@ -890,8 +890,11 @@ html,body {
 }
 
 .images_2 {
+	left: 1%;
 	max-width: 590px !important;
 	overflow: hidden !important;
+	position: absolute;
+	top: 1%;
 	width: 100% !important;
 }
 
