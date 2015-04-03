@@ -1241,6 +1241,8 @@ html,body {
 
 .bg {
 	-webkit-transition: -webkit-transform 0.4s;
+	position: absolute;
+	top: 12%;
 }
 
 .p10 .bg {
