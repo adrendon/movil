@@ -90,5 +90,5 @@
 .p11 .bg,.tituloRight{left:0}.tituloLeft,.tituloRight{position:absolute;top:4%;z-index:1}.tituloMostrar{cursor:pointer}.title-left{position:absolute;right:0;top:4%}
 .title-right{left:0;position:absolute;top:4%}.imagesGallery{left:9%;position:absolute;top:13%}.delay001{-webkit-animation-delay:.8s}.delay002{-webkit-animation-delay:.9s}
 .delay003{-webkit-animation-delay:1.1s}.delay004{-webkit-animation-delay:1.3s}.delay005{-webkit-animation-delay:1.5s}.delay006{-webkit-animation-delay:1.7s}
-.btnMenuGallery{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;position:absolute;top:13%}.btnMenuGallery li{display:inline-block;margin-right:5px!important}
+.btnMenuGallery{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;position:absolute;top:13%;right:2%}.btnMenuGallery li{display:inline-block;margin-right:1px!important}
 .contentGallery{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;position:absolute;right:2%;top:28%}.btnMenuGalleryMostrar,.contentGalleryMostrar{-webkit-transform:translateX(0)}
