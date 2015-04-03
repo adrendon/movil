@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -420,6 +419,9 @@
       });
       var swMenuServicios = false;
       var imgFondo;
+      var idTitulo = jQuery('.tituloLeft, .tituloRight');
+      var idBgDown = jQuery('.bgDown');
+      var idBg = jQuery('.bg');
       function disableAnimate() {
         var pages = jQuery('#fb5-book').turn('view');
         setTimeout(function () {
@@ -532,9 +534,6 @@
         });
         jQuery('.imgBtnTen').on('click', function (e) {
           e.preventDefault();
-          var idTitulo = jQuery('.tituloLeft, .tituloRight');
-          var idBgDown = jQuery('.bgDown');
-          var idBg = jQuery('.bg');
           var delay = 0;
           var delayTwo = 400;
           var delayThree = 800;
