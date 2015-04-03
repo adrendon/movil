@@ -779,6 +779,8 @@ html,body {
 .p4 .fb5-page-book,
 .p5 .fb5-page-book,
 .p7 .fb5-page-book,
+.p8 .fb5-page-book,
+.p9 .fb5-page-book,
 .p10 .fb5-page-book,
 .p11 .fb5-page-book,
 .p12 .fb5-page-book,
@@ -1116,7 +1118,7 @@ html,body {
 }
 
 .imgBtnLeftActive, .imgBtnRightActive{
-	top: 0.5% !important;
+	top: 3% !important;
 	cursor: pointer;
 }
 
@@ -1141,7 +1143,7 @@ html,body {
 	-o-transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
 	max-width: 100%;
-	transform: scale(1.1);
+	transform: scale(1.02);
 	transition: all 1s ease-in-out;
 }
 
@@ -1171,7 +1173,7 @@ html,body {
 	-webkit-transform: translateX(1000px);
 	-webkit-transition: -webkit-transform 0.4s;
 	bottom: 0;
-	height: 56% !important;
+	height: 61% !important;
 	max-width: 100%;
 	position: absolute;
 	right: 0;
