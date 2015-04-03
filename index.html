@@ -678,6 +678,8 @@
         jQuery('.bgDown').removeClass('bgDownMostrar');
         jQuery('.tituloLeft, .tituloRight').removeClass('tituloMostrar');
         jQuery('.bg').removeClass('bgMostrar');
+        jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
+        jQuery('.contentGallery').removeClass('contentGalleryMostrar');
       }
       function fnc_servicios() {
         jQuery('.serviciosMain a img').on('click', function (e) {
@@ -740,6 +742,7 @@
               elemContent.siblings().removeClass('contentGalleryMostrar');
               elemContent.addClass('contentGalleryMostrar');
             }
+          elemContent.addClass('contentGalleryMostrar');
         });
           Gallery = true;
       }
