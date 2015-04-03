@@ -663,27 +663,25 @@
         }, 4000);
       }
       function hideContebtVentajas() {
-        jQuery('.contenido > div').removeClass('slide');
-        jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
-        jQuery('.hidden').removeClass('ocultar');
-        jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
-        jQuery('.leftWidht').removeClass('leftWidht');
-        jQuery('.serviciosMain').removeClass('serviciosMainActive');
-        jQuery('.imgPage').removeClass('imgPageMostrar');
-        jQuery('.btnMenu').removeClass('btnMenuMostrar');
-        jQuery('.imgBtnLeft').removeClass('imgBtnLeftActive');
-        jQuery('.imgBtnRight').removeClass('imgBtnRightActive');
-        jQuery('.btnTitle').removeClass('delay');
-        jQuery('.btnTitle').addClass('titleventajasMostrar');
-        idTitulo.removeClass('tituloMostrar');
-          setTimeout(function (){
-            idBg.removeClass('bgMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBgDown.removeClass('bgDownMostrar');
-          }, delayTwo);
-        jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
-        jQuery('.contentGallery').removeClass('contentGalleryMostrar');
+        setTimeout(function (){
+          jQuery('.contenido > div').removeClass('slide');
+          jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
+          jQuery('.hidden').removeClass('ocultar');
+          jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
+          jQuery('.leftWidht').removeClass('leftWidht');
+          jQuery('.serviciosMain').removeClass('serviciosMainActive');
+          jQuery('.imgPage').removeClass('imgPageMostrar');
+          jQuery('.btnMenu').removeClass('btnMenuMostrar');
+          jQuery('.imgBtnLeft').removeClass('imgBtnLeftActive');
+          jQuery('.imgBtnRight').removeClass('imgBtnRightActive');
+          jQuery('.btnTitle').removeClass('delay');
+          jQuery('.btnTitle').addClass('titleventajasMostrar');
+          jQuery('.tituloLeft, .tituloRight').removeClass('tituloMostrar');
+          jQuery('.bg').removeClass('bgMostrar');
+          jQuery('.bgDown').removeClass('bgDownMostrar');
+          jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
+          jQuery('.contentGallery').removeClass('contentGalleryMostrar');
+        }, delay);
       }
       function fnc_servicios() {
         jQuery('.serviciosMain a img').on('click', function (e) {
