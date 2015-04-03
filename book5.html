@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -33,7 +34,7 @@
           <div id="wBall_5" class="wBall"><!-- BEGIN BOLA 005 -->
             <div class="wInnerBall"></div>
           </div><!-- END BOLA 005 -->
-        </div><!-- END PRELOADER -->        
+        </div><!-- END PRELOADER -->
         <div class="fb5-bcg-book"></div><!-- BACKGROUND FOR BOOK -->
         <div id="fb5-container-book"><!-- BEGIN CONTAINER BOOK -->
           <section id="fb5-deeplinking"><!-- BEGIN DEEP BOOK -->
@@ -47,10 +48,12 @@
               <li data-address="page6-page7" data-page="7"></li>
               <li data-address="page8-page9" data-page="8"></li>
               <li data-address="page8-page9" data-page="9"></li>
-              <li data-address="end" data-page="10"></li>
+              <li data-address="page10-page11" data-page="10"></li>
+              <li data-address="page10-page11" data-page="11"></li>
+              <li data-address="end" data-page="12"></li>
            </ul>
            </section><!-- END DEEP BOOK -->
-          <div id="fb5-book"><!-- BEGIN BOOK -->                  
+          <div id="fb5-book"><!-- BEGIN BOOK -->
             <div data-background-image="" class="page001"><!-- BEGIN PAGE 1-->
               <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                 <div class="fb5-page-book"><!-- DESCRIPTION FOR PAGE -->
@@ -100,7 +103,7 @@
                   </div><!-- FIN CONTENIDO -->
                 </div><!-- END DESCRIPTION FOR PAGE -->
               </div><!-- END CONTAINER PAGE BOOK -->
-            </div><!-- END PAGE 3 -->            
+            </div><!-- END PAGE 3 -->
             <div data-background-image="pages/4_5.jpg" class="fb5-double fb5-first"><!-- BEGIN PAGE 4 -->
               <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                 <div class="fb5-page-book page4"><!-- BEGIN DESCRIPTION FOR PAGE -->
@@ -115,7 +118,7 @@
                   </div>
                 </div><!-- END DESCRIPTION FOR PAGE -->
               </div><!-- END CONTAINER PAGE BOOK -->
-            </div><!-- END PAGE 4 -->                
+            </div><!-- END PAGE 4 -->
             <div data-background-image="pages/4_5.jpg" class="fb5-double fb5-second"><!-- BEGIN PAGE 5 -->
               <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                 <div class="fb5-page-book page5"><!-- BEGIN DESCRIPTION FOR PAGE -->
@@ -146,7 +149,7 @@
                   </div>
                 </div><!-- END DESCRIPTION FOR PAGE -->
               </div><!-- END CONTAINER PAGE BOOK -->
-            </div><!-- END PAGE 6 -->                
+            </div><!-- END PAGE 6 -->
             <div data-background-image="pages/4_5.jpg" class="fb5-double fb5-second"><!-- BEGIN PAGE 7 -->
               <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                 <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
@@ -288,12 +291,43 @@
                 </div><!-- END DESCRIPTION FOR PAGE -->
               </div><!-- END CONTAINER PAGE BOOK -->
             </div><!-- END PAGE 9 -->
-            <div data-background-image="pages/10.jpg" class=""><!-- BEGIN PAGE 10 -->
+            <div data-background-image="pages/10_11.jpg" class="fb5-double fb5-first"><!-- BEGIN PAGE 10 -->
+              <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
+                <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
+                  <img class="animated seconds fadeInLeft delay imgBtnTen" data-src="img/10_11/btn_title.png">
+                  <div class="tituloLeft">
+                    <img data-src="img/10_11/btn_title_left.png">
+                  </div>
+                  <div class="bgDown">
+                    <img data-src="img/10_11/bg_001.jpg">
+                  </div>
+                  <div class="bg">
+                    <img class="imgLeft" data-src="img/10_11/block_left.png">
+                  </div>
+                </div><!-- END DESCRIPTION FOR PAGE -->
+              </div><!-- END CONTAINER PAGE BOOK -->
+            </div><!-- END PAGE 10 -->
+            <div data-background-image="pages/10_11.jpg" class="fb5-double fb5-second"><!-- BEGIN PAGE 11 -->
+              <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
+                <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
+                  <div class="tituloRight">
+                    <img data-src="img/10_11/btn_title_right.png">
+                  </div>
+                  <div class="bgDown">
+                    <img data-src="img/10_11/bg_002.jpg">
+                  </div>
+                  <div class="bg">
+                    <img class="imgRight" data-src="img/10_11/block_right.png">
+                  </div>
+                </div><!-- END DESCRIPTION FOR PAGE -->
+              </div><!-- END CONTAINER PAGE BOOK -->
+            </div><!-- END PAGE 11 -->
+            <div data-background-image="pages/12.jpg" class=""><!-- BEGIN PAGE 12 -->
               <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                 <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
                 </div><!-- END DESCRIPTION FOR PAGE -->
               </div><!-- END CONTAINER PAGE BOOK -->
-            </div><!-- END PAGE 10 -->
+            </div><!-- END PAGE 12 -->
           </div><!-- END BOOK -->
           <!-- BEGIN ARROWS -->
           <a class="fb5-nav-arrow prev"></a>
@@ -306,7 +340,7 @@
               <img alt="" src="img/logo.png">
             </a>
           <div class="fb5-menu" id="fb5-center"><!-- BEGIN MENU FOOTER -->
-            <ul> 
+            <ul>
               <li><a title="DOWNLOAD (PDF)" class="fb5-download" href="img/file.pdf"></a></li>
               <li><a title="ZOOM IN" class="fb5-zoom-in"></a></li>
               <li><a title="ZOOM OUT " class="fb5-zoom-out"></a></li>
@@ -495,6 +529,27 @@
         });
         jQuery('.titleLeft img, .titleRight img').on('click', function () {
           hideContebtVentajas();
+        });
+        jQuery('.imgBtnTen').on('click', function (e) {
+          e.preventDefault();
+          var idTitulo = jQuery('.tituloLeft, .tituloRight');
+          var idBgDown = jQuery('.bgDown');
+          var idBg = jQuery('.bg');
+          var delay = 0;
+          var delayTwo = 400;
+          var delayThree = 800;
+          setTimeout(function (){
+            idTitulo.toggleClass('tituloMostrar');
+          }, delayTwo);
+          setTimeout(function (){
+            idBgDown.toggleClass('bgDownMostrar');
+          }, delay);
+          setTimeout(function (){
+            idBg.toggleClass('bgMostrar');
+          }, delayThree);
+        });
+        jQuery('.tituloMostrar').on('click', function() {
+
         });
       };
     </script>
