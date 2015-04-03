@@ -663,6 +663,7 @@
         }, 4000);
       }
       function hideContebtVentajas() {
+        jQuery('.contenido > div').removeClass('slide');
         jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
         jQuery('.hidden').removeClass('ocultar');
         jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
@@ -755,7 +756,6 @@
           var pages = jQuery('#fb5-book').turn('view');
           pages.forEach(function (element) {
             if (element === 2) {
-              jQuery('.contenido > div').removeClass('slide');
               jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
             }
             if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
