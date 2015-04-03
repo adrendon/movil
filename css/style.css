@@ -774,9 +774,21 @@ html,body {
 		#fb5 .fb5-overlay {
 			background:rgba(0,0,0,0.6);
         }
-.fb5-page-book {
-	height: 1042px !important;
+.p4 .fb5-page-book,
+.p5 .fb5-page-book,
+.p7 .fb5-page-book,
+.p10 .fb5-page-book,
+.p11 .fb5-page-book {
+	height: 100% !important;
+	width: 960px !important;
+	left: 0 !important;
+	top: 0 !important;
 }
+
+/*#fb5 .fb5-page-book {
+	left: 0 !important;
+	top: 0 !important;
+}*/
 
 .seconds {
 	-webkit-animation-duration: 1s;
@@ -867,7 +879,6 @@ html,body {
 	color: #fff !important;
 	font-family: 'champagne' !important;
 	font-size: 34px !important;
-	margin-bottom: 28px !important;
 	text-align: center !important;
 	text-transform: uppercase !important;
 }
@@ -1201,4 +1212,60 @@ html,body {
 .imgPageMostrar.imgPage006 {
 	background: url('../img/8_9/rayosx/foto_big.jpg') !important;
 	width: 100% !important;
+}
+
+.imgBtnTen {
+	cursor: pointer;
+	position: absolute;
+	top: 10%;
+}
+
+.bgDown {
+	-webkit-transform: translateY(2000px);
+	-webkit-transition: -webkit-transform 0.4s;
+}
+
+.tituloLeft, .tituloRight {
+	-webkit-transform: translateY(-2000px);
+	-webkit-transition: -webkit-transform 0.4s;
+}
+
+.bgDownMostrar, .tituloMostrar {
+	-webkit-transform: translateY(0);
+}
+
+.bg {
+	-webkit-transition: -webkit-transform 0.4s;
+}
+
+.p10 .bg {
+	-webkit-transform: translateX(-1000px);
+}
+
+.p11 .bg {
+	-webkit-transform: translateX(1000px);
+}
+
+.p10 .bg.bgMostrar, .p11 .bg.bgMostrar {
+	-webkit-transform: translateY(0);
+    position: absolute;
+	top: 12%;
+}
+
+.p10 .bg, .tituloLeft {
+	right: 0;
+}
+
+.p11 .bg, .tituloRight {
+	left: 0;
+}
+
+.tituloLeft, .tituloRight {
+  position: absolute;
+  top: 4%;
+  z-index: 1;
+}
+
+.tituloMostrar {
+	cursor: pointer;
 }
