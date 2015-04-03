@@ -719,11 +719,11 @@
           e.preventDefault();
           var $this = jQuery(this);
           var idSubMenuGallery = $this.parent().attr('href');
-          classGallery = $this.parent().attr('class');
+          //classGallery = $this.parent().attr('class');
           var indexMenuGallery = $this.parent().parent().attr('data-item');
           var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
           jQuery('.contentGallery').removeClass('contentGalleryMostrar');
-          jQuery('.contentGallery[data-item="' + indexMenuGallery + '"]').addClass('contentGalleryMostrar ' + classGallery);
+          jQuery('.contentGallery[data-item="' + indexMenuGallery + '"]').addClass('contentGalleryMostrar '); //+ classGallery);
           if (!subMenuGallery.hasClass('btnMenuGalleryMostrar')) {
             jQuery('.btnMenu').removeClass('btnMenuGalleryMostrar');
             subMenuGallery.addClass('btnMenuGalleryMostrar');
