@@ -648,10 +648,11 @@
       )
     </script>
     <script type="text/javascript">
-      jQuery('#fb5-book').on('click', function(e){
-        e.preventDefault();
+      jQuery('#fb5-book').on('click', function (e) {
+          e.preventDefault();
       });
       var swMenuServicios = false;
+      var swEspecialistas = false;
       var imgFondo;
       var classGallery;
       var Gallery = false;
@@ -661,171 +662,184 @@
       var delay = 400;
       var delayTwo = 800;
       function disableAnimate() {
-        var pages = jQuery('#fb5-book').turn('view');
-        setTimeout(function () {
-          pages.forEach(function (element) {
-            if (element !== 0) {
-              jQuery('div[page=' + element + '] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown fadeInUp logoAnimated');
-            }
-          });
-        }, 4000);
+          var pages = jQuery('#fb5-book').turn('view');
+          setTimeout(function () {
+              pages.forEach(function (element) {
+                  if (element !== 0) {
+                      jQuery('div[page=' + element + '] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown fadeInUp logoAnimated');
+                  }
+              });
+          }, 4000);
       }
       function hideContebtVentajas() {
-        setTimeout(function (){
-          jQuery('.contenido > div').removeClass('slide');
-          jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
-          jQuery('.hidden').removeClass('ocultar');
-          jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
-          jQuery('.leftWidht').removeClass('leftWidht');
-          jQuery('.serviciosMain').removeClass('serviciosMainActive');
-          jQuery('.imgPage').removeClass('imgPageMostrar');
-          jQuery('.btnMenu').removeClass('btnMenuMostrar');
-          jQuery('.imgBtnLeft').removeClass('imgBtnLeftActive');
-          jQuery('.imgBtnRight').removeClass('imgBtnRightActive');
-          jQuery('.btnTitle').removeClass('delay');
-          jQuery('.btnTitle').addClass('titleventajasMostrar');
-          jQuery('.tituloLeft, .tituloRight').removeClass('tituloMostrar');
-          jQuery('.bg').removeClass('bgMostrar');
-          jQuery('.bgDown').removeClass('bgDownMostrar');
-          jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
-          jQuery('.contentGallery').removeClass('contentGalleryMostrar');
-        }, delay);
+          setTimeout(function () {
+              jQuery('.contenido > div').removeClass('slide');
+              jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
+              jQuery('.hidden').removeClass('ocultar');
+              jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
+              jQuery('.leftWidht').removeClass('leftWidht');
+              jQuery('.serviciosMain').removeClass('serviciosMainActive');
+              jQuery('.imgPage').removeClass('imgPageMostrar');
+              jQuery('.btnMenu').removeClass('btnMenuMostrar');
+              jQuery('.imgBtnLeft').removeClass('imgBtnLeftActive');
+              jQuery('.imgBtnRight').removeClass('imgBtnRightActive');
+              jQuery('.btnTitle').removeClass('delay');
+              jQuery('.btnTitle').addClass('titleventajasMostrar');
+              jQuery('.tituloLeft, .tituloRight').removeClass('tituloMostrar');
+              jQuery('.bg').removeClass('bgMostrar');
+              jQuery('.bgDown').removeClass('bgDownMostrar');
+              jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
+              jQuery('.contentGallery').removeClass('contentGalleryMostrar');
+          }, delay);
       }
       function fnc_servicios() {
-        jQuery('.serviciosMain a img').on('click', function (e) {
-          e.preventDefault();
-          var $this = jQuery(this);
-          var idSubMenu = $this.parent().attr('href');
-          imgFondo = $this.parent().attr('class');
-          var indexMenu = $this.parent().parent().attr('data-item');
-          var subMenu = jQuery(idSubMenu).parent();
-          setTimeout(function () {
-            jQuery('.imgPage').removeClass('imgPageMostrar');
-            jQuery('.imgPage[data-item="' + indexMenu + '"]').addClass('imgPageMostrar ' + imgFondo);
-            if (!subMenu.hasClass('btnMenuMostrar')) {
-              jQuery('.btnMenu').removeClass('btnMenuMostrar');
-              subMenu.addClass('btnMenuMostrar');
-            }
-          }, 400);
-          jQuery('li[data-item]').removeClass('serviceActive');
-          $this.parent().parent().addClass('serviceActive');
-          jQuery('.serviciosMain').addClass('serviciosMainActive');
-          jQuery('.imgBtnLeft').addClass('imgBtnLeftActive');
-          jQuery('.imgBtnRight').addClass('imgBtnRightActive');
-      });
-      jQuery('.btnMenu li img').on('click', function (e) {
-        e.preventDefault();
-        var $this = jQuery(this);
-        var idElemContent = $this.parent().attr('href');
-        var elemContent = jQuery(idElemContent);
-          if (elemContent.hasClass('contentMostrar')) {
-            elemContent.removeClass('contentMostrar');
-          } else {
-            elemContent.siblings().removeClass('contentMostrar');
-            elemContent.addClass('contentMostrar');
-          }
-      });
-        swMenuServicios = true;
+          jQuery('.serviciosMain a img').on('click', function (e) {
+              e.preventDefault();
+              var $this = jQuery(this);
+              var idSubMenu = $this.parent().attr('href');
+              imgFondo = $this.parent().attr('class');
+              var indexMenu = $this.parent().parent().attr('data-item');
+              var subMenu = jQuery(idSubMenu).parent();
+              setTimeout(function () {
+                  jQuery('.imgPage').removeClass('imgPageMostrar');
+                  jQuery('.imgPage[data-item="' + indexMenu + '"]').addClass('imgPageMostrar ' + imgFondo);
+                  if (!subMenu.hasClass('btnMenuMostrar')) {
+                      jQuery('.btnMenu').removeClass('btnMenuMostrar');
+                      subMenu.addClass('btnMenuMostrar');
+                  }
+              }, 400);
+              jQuery('li[data-item]').removeClass('serviceActive');
+              $this.parent().parent().addClass('serviceActive');
+              jQuery('.serviciosMain').addClass('serviciosMainActive');
+              jQuery('.imgBtnLeft').addClass('imgBtnLeftActive');
+              jQuery('.imgBtnRight').addClass('imgBtnRightActive');
+          });
+
+          jQuery('.btnMenu li img').on('click', function (e) {
+              e.preventDefault();
+              var $this = jQuery(this);
+              var idElemContent = $this.parent().attr('href');
+              var elemContent = jQuery(idElemContent);
+              if (elemContent.hasClass('contentMostrar')) {
+                  elemContent.removeClass('contentMostrar');
+              } else {
+                  elemContent.siblings().removeClass('contentMostrar');
+                  elemContent.addClass('contentMostrar');
+              }
+          });
+          swMenuServicios = true;
       }
+
+      function fnc_especialistas() {
+          jQuery('.imgBtnTen').on('click', function (e) {
+              e.preventDefault();
+              idBgDown.addClass('bgDownMostrar');
+              setTimeout(function () {
+                  idTitulo.addClass('tituloMostrar');
+              }, delay);
+              setTimeout(function () {
+                  idBg.addClass('bgMostrar');
+              }, delayTwo);
+          });
+          swEspecialistas = true;
+      }
+
       function fnc_gallery() {
-        jQuery('.imagesGallery li a img').on('click', function (e) {
-          e.preventDefault();
-          var $this = jQuery(this);
-          var indexMenuGallery = $this.parent().parent().attr('data-item');
-          var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
-          var idElemMenu = jQuery(subMenuGallery).parent().parent().find('.imagesGalleryBig .galleryPage .contentGallery');
-          var elemtMenu = jQuery(idElemMenu);
-          jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
-          jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').addClass('btnMenuGalleryMostrar');
-          if (elemtMenu.hasClass('contentGalleryMostrar')) {
-            elemtMenu.removeClass('contentGalleryMostrar');
-          }
-        });
-        jQuery('.btnMenuGallery li a img').on('click', function (e) {
-          e.preventDefault();
-          var $this = jQuery(this);
-          var idElemContent = $this.parent().attr('href');
-          var elemContent = jQuery(idElemContent);
-            if (elemContent.hasClass('contentGalleryMostrar')) {
-              elemContent.removeClass('contentGalleryMostrar');
-            } else {
-              elemContent.siblings().removeClass('contentGalleryMostrar');
+          jQuery('.imagesGallery li a img').on('click', function (e) {
+              e.preventDefault();
+              var $this = jQuery(this);
+              var indexMenuGallery = $this.parent().parent().attr('data-item');
+              var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
+              var idElemMenu = jQuery(subMenuGallery).parent().parent().find('.imagesGalleryBig .galleryPage .contentGallery');
+              var elemtMenu = jQuery(idElemMenu);
+              jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
+              jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').addClass('btnMenuGalleryMostrar');
+              if (elemtMenu.hasClass('contentGalleryMostrar')) {
+                  elemtMenu.removeClass('contentGalleryMostrar');
+              }
+          });
+          jQuery('.btnMenuGallery li a img').on('click', function (e) {
+              e.preventDefault();
+              var $this = jQuery(this);
+              var idElemContent = $this.parent().attr('href');
+              var elemContent = jQuery(idElemContent);
+              if (elemContent.hasClass('contentGalleryMostrar')) {
+                  elemContent.removeClass('contentGalleryMostrar');
+              } else {
+                  elemContent.siblings().removeClass('contentGalleryMostrar');
+                  elemContent.addClass('contentGalleryMostrar');
+              }
               elemContent.addClass('contentGalleryMostrar');
-            }
-          elemContent.addClass('contentGalleryMostrar');
-        });
+          });
           Gallery = true;
       }
       window.onload = function () {
-        disableAnimate();
-        if (jQuery('.serviciosMain a img')[0]) {
-          fnc_servicios();
-        }
-        jQuery('.prev, .next').on('click', function () {
           disableAnimate();
-          var pages = jQuery('#fb5-book').turn('view');
-          pages.forEach(function (element) {
-            if (element === 2) {
-              jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
-            }
-            if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
-                fnc_servicios();
+          if (jQuery('.serviciosMain a img')[0]) {
+              fnc_servicios();
+          }
+          if (jQuery('.imgBtnTen img')[0]) {
+              fnc_especialistas();
+          }
+          jQuery('.prev, .next').on('click', function () {
+              disableAnimate();
+              var pages = jQuery('#fb5-book').turn('view');
+              pages.forEach(function (element) {
+                  if (element === 2) {
+                      jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
+                  }
+                  if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
+                      fnc_servicios();
+                  }
+                  if ((element === 8 || element === 10 || element === 12) && swEspecialistas === false) {
+                      fnc_especialistas();
+                  }
+              });
+              hideContebtVentajas();
+              fnc_gallery();
+          });
+          jQuery('ul.images_2 a img').on('click', function (e) {
+              e.preventDefault();
+              var idContent = jQuery(this).parent().attr('href');
+              var elemContent = jQuery(idContent);
+              if (elemContent.hasClass('slide')) {
+                  elemContent.toggleClass('slide');
+              } else {
+                  jQuery('.contenido > div').removeClass('slide');
+                  elemContent.toggleClass('slide');
               }
           });
-          hideContebtVentajas();
-          fnc_gallery();
-        });
-        jQuery('ul.images_2 a img').on('click', function (e) {
-          e.preventDefault();
-          var idContent = jQuery(this).parent().attr('href');
-          var elemContent = jQuery(idContent);
-          if (elemContent.hasClass('slide')) {
-            elemContent.toggleClass('slide');
-          } else {
-            jQuery('.contenido > div').removeClass('slide');
-            elemContent.toggleClass('slide');
-          }
-        });
-        jQuery('.btnInformatica').on('click', function (e) {
-          e.preventDefault();
-          var idcontenido = jQuery('.blockLeft');
-          if (idcontenido.hasClass('block_Mostrar')) {
-            idcontenido.toggleClass('block_Mostrar');
-          } else {
-            jQuery('.contenido > div').removeClass('block_Mostrar');
-            idcontenido.toggleClass('block_Mostrar');
-          }
-        });
-        jQuery('.btnTitle').on('click', function (e) {
-          e.preventDefault();
-          jQuery(this).addClass('titleventajas').parent().parent().addClass('leftWidht');
-          jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
-          jQuery('.btnTitle').removeClass('titleventajasMostrar');
-          jQuery('.hidden').addClass('ocultar');
-          jQuery('.block_left, .block_Right').addClass('block_Mostrar');
-        });
-        jQuery('.titleLeft img, .titleRight img').on('click', function () {
-          hideContebtVentajas();
-        });
-        jQuery('.imgBtnTen').on('click', function (e) {
-          e.preventDefault();
-          idBgDown.addClass('bgDownMostrar');
-          setTimeout(function (){
-            idTitulo.addClass('tituloMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBg.addClass('bgMostrar');
-          }, delayTwo);
-        });
-        jQuery('.tituloLeft, .tituloRight').on('click', function() {
-          idTitulo.removeClass('tituloMostrar');
-          setTimeout(function (){
-            idBg.removeClass('bgMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBgDown.removeClass('bgDownMostrar');
-          }, delayTwo);
-        });
+          jQuery('.btnInformatica').on('click', function (e) {
+              e.preventDefault();
+              var idcontenido = jQuery('.blockLeft');
+              if (idcontenido.hasClass('block_Mostrar')) {
+                  idcontenido.toggleClass('block_Mostrar');
+              } else {
+                  jQuery('.contenido > div').removeClass('block_Mostrar');
+                  idcontenido.toggleClass('block_Mostrar');
+              }
+          });
+          jQuery('.btnTitle').on('click', function (e) {
+              e.preventDefault();
+              jQuery(this).addClass('titleventajas').parent().parent().addClass('leftWidht');
+              jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
+              jQuery('.btnTitle').removeClass('titleventajasMostrar');
+              jQuery('.hidden').addClass('ocultar');
+              jQuery('.block_left, .block_Right').addClass('block_Mostrar');
+          });
+          jQuery('.titleLeft img, .titleRight img').on('click', function () {
+              hideContebtVentajas();
+          });
+
+          jQuery('.tituloLeft, .tituloRight').on('click', function () {
+              idTitulo.removeClass('tituloMostrar');
+              setTimeout(function () {
+                  idBg.removeClass('bgMostrar');
+              }, delay);
+              setTimeout(function () {
+                  idBgDown.removeClass('bgDownMostrar');
+              }, delayTwo);
+          });
       };
     </script>
   </body>
