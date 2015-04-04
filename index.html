@@ -7,7 +7,7 @@
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/turn.js"></script>
     <script src="js/jquery.fullscreen.js"></script>
     <script src="js/jquery.address-1.6.min.js"></script>
@@ -775,25 +775,6 @@
           hideContebtVentajas();
           fnc_gallery();
         });
-        jQuery('.imgBtnTen').on('click', function (e) {
-          e.preventDefault();
-          idBgDown.addClass('bgDownMostrar');
-          setTimeout(function (){
-            idTitulo.addClass('tituloMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBg.addClass('bgMostrar');
-          }, delayTwo);
-        });
-        jQuery('.tituloLeft, .tituloRight').on('click', function() {
-          idTitulo.removeClass('tituloMostrar');
-          setTimeout(function (){
-            idBg.removeClass('bgMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBgDown.removeClass('bgDownMostrar');
-          }, delayTwo);
-        });
         jQuery('ul.images_2 a img').on('click', function (e) {
           e.preventDefault();
           var idContent = jQuery(this).parent().attr('href');
@@ -825,6 +806,25 @@
         });
         jQuery('.titleLeft img, .titleRight img').on('click', function () {
           hideContebtVentajas();
+        });
+        jQuery('.imgBtnTen').on('click', function (e) {
+          e.preventDefault();
+          idBgDown.addClass('bgDownMostrar');
+          setTimeout(function (){
+            idTitulo.addClass('tituloMostrar');
+          }, delay);
+          setTimeout(function (){
+            idBg.addClass('bgMostrar');
+          }, delayTwo);
+        });
+        jQuery('.tituloLeft, .tituloRight').on('click', function() {
+          idTitulo.removeClass('tituloMostrar');
+          setTimeout(function (){
+            idBg.removeClass('bgMostrar');
+          }, delay);
+          setTimeout(function (){
+            idBgDown.removeClass('bgDownMostrar');
+          }, delayTwo);
         });
       };
     </script>
