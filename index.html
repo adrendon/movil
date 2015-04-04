@@ -785,15 +785,15 @@
               disableAnimate();
               var pages = jQuery('#fb5-book').turn('view');
               pages.forEach(function (element) {
-                  if (element === 2) {
-                      jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
-                  }
-                  if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
-                      fnc_servicios();
-                  }
-                  if ((element === 8 || element === 10 || element === 12) && swEspecialistas === false) {
-                      fnc_especialistas();
-                  }
+                if (element === 2) {
+                    jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
+                }
+                if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
+                    fnc_servicios();
+                }
+                if ((element === 8 || element === 10 || element === 12) && swEspecialistas === false) {
+                    fnc_especialistas();
+                }
               });
               hideContebtVentajas();
               fnc_gallery();
