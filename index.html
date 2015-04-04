@@ -741,6 +741,15 @@
                   idBg.addClass('bgMostrar');
               }, delayTwo);
           });
+          jQuery('.tituloLeft, .tituloRight').on('click', function () {
+              idTitulo.removeClass('tituloMostrar');
+              setTimeout(function () {
+                  idBg.removeClass('bgMostrar');
+              }, delay);
+              setTimeout(function () {
+                  idBgDown.removeClass('bgDownMostrar');
+              }, delayTwo);
+          });
           swEspecialistas = true;
       }
 
@@ -829,16 +838,6 @@
           });
           jQuery('.titleLeft img, .titleRight img').on('click', function () {
               hideContebtVentajas();
-          });
-
-          jQuery('.tituloLeft, .tituloRight').on('click', function () {
-              idTitulo.removeClass('tituloMostrar');
-              setTimeout(function () {
-                  idBg.removeClass('bgMostrar');
-              }, delay);
-              setTimeout(function () {
-                  idBgDown.removeClass('bgDownMostrar');
-              }, delayTwo);
           });
       };
     </script>
