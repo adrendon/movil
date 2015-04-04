@@ -80,7 +80,7 @@
 .serviciosMain li:hover img{transform:scale(1.1)}.serviciosMainActive li:hover img{transform:scale(1.1)}.serviciosMainActive li img{display:block;height:auto;margin:auto!important;max-width:60%}
 .serviciosMainActive .serviceActive img{display:block;height:auto;margin:auto!important;max-width:80%;transform:scale(1.02)}.btnMenu{-webkit-transform:translateX(-1000px);-webkit-transition:-webkit-transform .4s;left:2%;position:relative;top:44%;z-index:10000}
 .btnMenuMostrar{-webkit-transform:translateX(0)}.btnMenu li{-webkit-transition:-webkit-transform .4s;width:100%!important;margin-top:5%!important}.btnMenu li:first-child{margin-top:0!important}
-.imgPage{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;bottom:0;height:61%!important;max-width:100%;position:absolute;right:0}
+.imgPage{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .8s;bottom:0;height:61%!important;max-width:100%;position:absolute;right:0}
 .content{-webkit-transform:translateX(1000px);-webkit-transition:-webkit-transform .4s;bottom:0;height:100%!important;position:absolute;z-index:2}.imgPageMostrar,.contentMostrar{-webkit-transform:translateX(0);s}
 .imgPageMostrar.imgPage001{background:url('../img/8_9/resonancia/foto_big.jpg')!important;width:100%!important}.imgPageMostrar.imgPage002{background:url('../img/8_9/tomografia/foto_big.jpg')!important;width:100%!important}
 .imgPageMostrar.imgPage003{background:url('../img/8_9/ecografia/foto_big.jpg')!important;width:100%!important}.imgPageMostrar.imgPage004{background:url('../img/8_9/mamografia/foto_big.jpg')!important;width:100%!important}

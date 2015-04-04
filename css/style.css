@@ -1193,7 +1193,7 @@ html,body {
 
 .imgPage {
 	-webkit-transform: translateX(1000px);
-	-webkit-transition: -webkit-transform 0.4s;
+	-webkit-transition: -webkit-transform 0.8s;
 	bottom: 0;
 	height: 61% !important;
 	max-width: 100%;
