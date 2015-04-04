@@ -7,7 +7,7 @@
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700">
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/turn.js"></script>
     <script src="js/jquery.fullscreen.js"></script>
     <script src="js/jquery.address-1.6.min.js"></script>
@@ -303,7 +303,9 @@
             <div data-background-image="pages/10_11.jpg" class="fb5-double fb5-first"><!-- BEGIN PAGE 10 -->
               <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                 <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
-                  <img class="animated seconds fadeInLeft delay imgBtnTen" data-src="img/10_11/btn_title.png">
+                <div class="imgBtnTen animated seconds fadeInLeft delay">
+                  <img data-src="img/10_11/btn_title.png">
+                </div>
                   <div class="tituloLeft">
                     <img data-src="img/10_11/btn_title_left.png">
                   </div>
@@ -759,9 +761,6 @@
         if (jQuery('.serviciosMain a img')[0]) {
           fnc_servicios();
         }
-        if (jQuery('.imagesGallery li a img')[0]) {
-          fnc_gallery();
-        }
         jQuery('.prev, .next').on('click', function () {
           disableAnimate();
           var pages = jQuery('#fb5-book').turn('view');
@@ -771,10 +770,29 @@
             }
             if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
                 fnc_servicios();
-                fnc_gallery();
               }
           });
           hideContebtVentajas();
+          fnc_gallery();
+        });
+        jQuery('.imgBtnTen').on('click', function (e) {
+          e.preventDefault();
+          idBgDown.addClass('bgDownMostrar');
+          setTimeout(function (){
+            idTitulo.addClass('tituloMostrar');
+          }, delay);
+          setTimeout(function (){
+            idBg.addClass('bgMostrar');
+          }, delayTwo);
+        });
+        jQuery('.tituloLeft, .tituloRight').on('click', function() {
+          idTitulo.removeClass('tituloMostrar');
+          setTimeout(function (){
+            idBg.removeClass('bgMostrar');
+          }, delay);
+          setTimeout(function (){
+            idBgDown.removeClass('bgDownMostrar');
+          }, delayTwo);
         });
         jQuery('ul.images_2 a img').on('click', function (e) {
           e.preventDefault();
@@ -807,25 +825,6 @@
         });
         jQuery('.titleLeft img, .titleRight img').on('click', function () {
           hideContebtVentajas();
-        });
-        jQuery('.imgBtnTen').on('click', function (e) {
-          e.preventDefault();
-          idBgDown.toggleClass('bgDownMostrar');
-          setTimeout(function (){
-            idTitulo.toggleClass('tituloMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBg.toggleClass('bgMostrar');
-          }, delayTwo);
-        });
-        jQuery('.tituloLeft, .tituloRight').on('click', function() {
-          idTitulo.removeClass('tituloMostrar');
-          setTimeout(function (){
-            idBg.removeClass('bgMostrar');
-          }, delay);
-          setTimeout(function (){
-            idBgDown.removeClass('bgDownMostrar');
-          }, delayTwo);
         });
       };
     </script>

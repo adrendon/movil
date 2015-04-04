@@ -396,6 +396,7 @@ html,body {
 	#fb5 .fb5-page-book img {
 		border:none;
 		padding:0;
+		display: block;
 	}
 
 	#fb5 .fb5-page-book p {
@@ -1110,8 +1111,12 @@ html,body {
   margin-right: 0% !important;
 }
 
-.bgUp {
+.p8 .bgUp{
 	bottom: -6px;
+}
+
+.bgUp {
+	bottom: 0;
 	position: absolute;
 	z-index: 1;
 }
