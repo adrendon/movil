@@ -85,11 +85,11 @@
                             <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                                 <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
                                     <ul class="images_2">
-                                        <li class="animated seconds fadeInRight"><a class="btn001" href="#content001"><img data-src="img/2_3/btn_001.png"></a></li>
-                                        <li class="animated seconds fadeInRight"><a class="btn002" href="#content002"><img data-src="img/2_3/btn_002.png"></a></li>
-                                        <li class="animated seconds fadeInRight"><a class="btn003" href="#content003"><img data-src="img/2_3/btn_003.png"></a></li>
-                                        <li class="animated seconds fadeInRight"><a class="btn004" href="#content004"><img data-src="img/2_3/btn_004.png"></a></li>
-                                        <li class="animated seconds fadeInRight"><a class="btn005" href="#content005"><img data-src="img/2_3/btn_005.png"></a></li>
+                                        <li class="animated seconds fadeInRight"><a class="btn001" href="#content001"><img data-src="img/2_3/btn_001.png" onclick="empresa(this)"></a></li>
+                                        <li class="animated seconds fadeInRight"><a class="btn002" href="#content002"><img data-src="img/2_3/btn_002.png" onclick="empresa(this)"></a></li>
+                                        <li class="animated seconds fadeInRight"><a class="btn003" href="#content003"><img data-src="img/2_3/btn_003.png" onclick="empresa(this)"></a></li>
+                                        <li class="animated seconds fadeInRight"><a class="btn004" href="#content004"><img data-src="img/2_3/btn_004.png" onclick="empresa(this)"></a></li>
+                                        <li class="animated seconds fadeInRight"><a class="btn005" href="#content005"><img data-src="img/2_3/btn_005.png" onclick="empresa(this)"></a></li>
                                     </ul>
                                 </div><!-- END DESCRIPTION FOR PAGE -->
                             </div><!-- END CONTAINER PAGE BOOK -->
@@ -110,7 +110,7 @@
                         <div data-background-image="pages/4_5.jpg" class="fb5-double fb5-first"><!-- BEGIN PAGE 4 -->
                             <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                                 <div class="fb5-page-book page4"><!-- BEGIN DESCRIPTION FOR PAGE -->
-                                    <div class="titleLeft">
+                                    <div class="titleLeft" onclick="hideVentajas(this)">
                                         <img data-src="img/4_5/title_left.png">
                                     </div>
                                     <div class="animated seconds fadeInLeft delay">
@@ -125,16 +125,16 @@
                         <div data-background-image="pages/4_5.jpg" class="fb5-double fb5-second"><!-- BEGIN PAGE 5 -->
                             <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                                 <div class="fb5-page-book page5"><!-- BEGIN DESCRIPTION FOR PAGE -->
-                                    <div class="titleRight">
-                                        <img data-src="img/4_5/title_right.png" height="89" width="415">
+                                    <div class="titleRight" onclick="hideVentajas(this)">
+                                        <img data-src="img/4_5/title_right.png">
                                     </div>
                                     <div class="animated seconds fadeInRight delay">
-                                        <a href="#" class="btnTitle">
-                                            <img data-src="img/4_5/btn_title.png" height="89" width="831" style="margin-top: 90px;" src="img/4_5/btn_title.png">
+                                        <a href="#" class="btnTitle" onclick="showVentajas(this)">
+                                            <img data-src="img/4_5/btn_title.png" style="margin-top: 90px;" src="img/4_5/btn_title.png">
                                         </a>
                                     </div>
                                     <div class="block_Right">
-                                        <img data-src="img/4_5/block_right.png" height="546" width="707">
+                                        <img data-src="img/4_5/block_right.png">
                                     </div>
                                 </div><!-- END DESCRIPTION FOR PAGE -->
                             </div><!-- END CONTAINER PAGE BOOK -->
@@ -143,12 +143,12 @@
                             <div class="fb5-cont-page-book"><!-- BEGIN CONTAINER PAGE BOOK -->
                                 <div class="fb5-page-book"><!-- BEGIN DESCRIPTION FOR PAGE -->
                                     <div class="animated seconds fadeInLeft delay">
-                                        <a href="#" class="btnInformatica">
-                                            <img data-src="img/6_7/btn_title.png" height="77" width="892" style="margin-top: 90px;">
+                                        <a href="#" class="btnInformatica" onclick="showInformatica()">
+                                            <img data-src="img/6_7/btn_title.png" style="margin-top: 90px;">
                                         </a>
                                     </div>
                                     <div class="animated blockLeft" style="margin-top:130px;">
-                                        <img data-src="img/6_7/block_left.png" height="634" width="822">
+                                        <img data-src="img/6_7/block_left.png">
                                     </div>
                                 </div><!-- END DESCRIPTION FOR PAGE -->
                             </div><!-- END CONTAINER PAGE BOOK -->
@@ -167,50 +167,50 @@
                                 <div class="fb5-page-book leftWidhtPage"><!-- BEGIN DESCRIPTION FOR PAGE -->
                                     <img class="animated seconds fadeInLeft delay imgBtnLeft" data-src="img/8_9/title_left.png" height="59" width="468">
                                     <ul class="serviciosMain">
-                                        <li data-item="uno"><a class="imgPage001" href="#resonancia"><img class="animated seconds fadeInLeft delay" src="img/8_9/btn001.png" alt="imgbtn001"></a></li>
-                                        <li data-item="dos"><a class="imgPage002" href="#tomografia"><img class="animated seconds fadeInDown delay" src="img/8_9/btn002.png" alt="imgbtn002"></a></li>
-                                        <li data-item="tres"><a class="imgPage003" href="#ecografia"><img class="animated seconds fadeInRight delay" src="img/8_9/btn003.png" alt="imgbtn003"></a></li>
+                                        <li data-item="uno"><a class="imgPage001" href="#resonancia"><img class="animated seconds fadeInLeft delay" src="img/8_9/btn001.png" alt="imgbtn001" onclick="servicios(this)"></a></li>
+                                        <li data-item="dos"><a class="imgPage002" href="#tomografia"><img class="animated seconds fadeInDown delay" src="img/8_9/btn002.png" alt="imgbtn002" onclick="servicios(this)"></a></li>
+                                        <li data-item="tres"><a class="imgPage003" href="#ecografia"><img class="animated seconds fadeInRight delay" src="img/8_9/btn003.png" alt="imgbtn003" onclick="servicios(this)"></a></li>
                                     </ul>
                                     <div class="btnMenu"><!-- INICIO MENU RESONANCIA -->
                                         <ul id="resonancia">
-                                            <li><a href="#item001"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn001.png" alt="imgbtn001"></a></li>
-                                            <li><a href="#item002"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn002.png" alt="imgbtn002"></a></li>
-                                            <li><a href="#item003"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn003.png" alt="imgbtn003"></a></li>
+                                            <li><a href="#item001"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn001.png" alt="imgbtn001" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item002"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn002.png" alt="imgbtn002" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item003"><img class="animated seconds fadeInLeft delay" src="img/8_9/resonancia/btn003.png" alt="imgbtn003" onclick="serviciosItem(this)"></a></li>
                                         </ul>
                                     </div><!-- FIN MENU RESONANCIA -->
                                     <div class="btnMenu"><!-- INICIO MENU TOMOGRAFIA -->
                                         <ul id="tomografia">
-                                            <li><a href="#item004"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn001.png" alt="imgbtn004"></a></li>
-                                            <li><a href="#item005"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn002.png" alt="imgbtn005"></a></li>
-                                            <li><a href="#item006"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn003.png" alt="imgbtn006"></a></li>
+                                            <li><a href="#item004"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn001.png" alt="imgbtn004" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item005"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn002.png" alt="imgbtn005" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item006"><img class="animated seconds fadeInLeft delay" src="img/8_9/tomografia/btn003.png" alt="imgbtn006" onclick="serviciosItem(this)"></a></li>
                                         </ul>
                                     </div><!-- FIN MENU TOMOGRAFIA -->
                                     <div class="btnMenu"><!-- INICIO MENU ECOGRAFIA -->
                                         <ul id="ecografia">
-                                            <li><a href="#item007"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn001.png" alt="imgbtn007"></a></li>
-                                            <li><a href="#item008"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn002.png" alt="imgbtn008"></a></li>
-                                            <li><a href="#item009"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn003.png" alt="imgbtn009"></a></li>
+                                            <li><a href="#item007"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn001.png" alt="imgbtn007" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item008"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn002.png" alt="imgbtn008" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item009"><img class="animated seconds fadeInLeft delay" src="img/8_9/ecografia/btn003.png" alt="imgbtn009" onclick="serviciosItem(this)"></a></li>
                                         </ul>
                                     </div><!-- FIN MENU ECOGRAFIA -->
                                     <div class="btnMenu"><!-- INICIO MENU MAMOGRAFIA -->
                                         <ul id="mamografia">
-                                            <li><a href="#item010"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn001.png" alt="imgbtn010"></a></li>
-                                            <li><a href="#item011"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn002.png" alt="imgbtn011"></a></li>
-                                            <li><a href="#item012"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn003.png" alt="imgbtn012"></a></li>
+                                            <li><a href="#item010"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn001.png" alt="imgbtn010" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item011"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn002.png" alt="imgbtn011" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item012"><img class="animated seconds fadeInLeft delay" src="img/8_9/mamografia/btn003.png" alt="imgbtn012" onclick="serviciosItem(this)"></a></li>
                                         </ul>
                                     </div><!-- FIN MENU MAMOGRAFIA -->
                                     <div class="btnMenu"><!-- INICIO MENU DENSITOMETRIA -->
                                         <ul id="densitometria">
-                                            <li><a href="#item013"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn001.png" alt="imgbtn013"></a></li>
-                                            <li><a href="#item014"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn002.png" alt="imgbtn014"></a></li>
-                                            <li><a href="#item015"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn003.png" alt="imgbtn015"></a></li>
+                                            <li><a href="#item013"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn001.png" alt="imgbtn013" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item014"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn002.png" alt="imgbtn014" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item015"><img class="animated seconds fadeInLeft delay" src="img/8_9/densitometria/btn003.png" alt="imgbtn015" onclick="serviciosItem(this)"></a></li>
                                         </ul>
                                     </div><!-- FIN MENU DENSITOMETRIA -->
                                     <div class="btnMenu"><!-- INICIO MENU RAYOS X -->
                                         <ul id="rayosx">
-                                            <li><a href="#item016"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn001.png" alt="imgbtn016"></a></li>
-                                            <li><a href="#item017"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn002.png" alt="imgbtn017"></a></li>
-                                            <li><a href="#item018"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn003.png" alt="imgbtn018"></a></li>
+                                            <li><a href="#item016"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn001.png" alt="imgbtn016" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item017"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn002.png" alt="imgbtn017" onclick="serviciosItem(this)"></a></li>
+                                            <li><a href="#item018"><img class="animated seconds fadeInLeft delay" src="img/8_9/rayosx/btn003.png" alt="imgbtn018" onclick="serviciosItem(this)"></a></li>
                                         </ul>
                                     </div><!-- FIN MENU RAYOS X -->
                                     <div class="bgUp animated seconds fadeInUp delay">
@@ -224,9 +224,9 @@
                                 <div class="fb5-page-book leftWidhtPage"><!-- BEGIN DESCRIPTION FOR PAGE -->
                                     <img class="animated seconds fadeInRight delay imgBtnRight" data-src="img/8_9/title_right.png" height="59" width="468">
                                     <ul class="serviciosMain">
-                                        <li data-item="cuatro"><a class="imgPage004" href="#mamografia"><img class="animated seconds fadeInLeft delay" src="img/8_9/btn004.png" alt="imgbtn004"></a></li>
-                                        <li data-item="cinco"><a class="imgPage005" href="#densitometria"><img class="animated seconds fadeInDown delay" src="img/8_9/btn005.png" alt="imgbtn005"></a></li>
-                                        <li data-item="seis"><a class="imgPage006" href="#rayosx"><img class="animated seconds fadeInRight delay" src="img/8_9/btn006.png" alt="imgbtn006"></a></li>
+                                        <li data-item="cuatro"><a class="imgPage004" href="#mamografia"><img class="animated seconds fadeInLeft delay" src="img/8_9/btn004.png" alt="imgbtn004" onclick="servicios(this)"></a></li>
+                                        <li data-item="cinco"><a class="imgPage005" href="#densitometria"><img class="animated seconds fadeInDown delay" src="img/8_9/btn005.png" alt="imgbtn005" onclick="servicios(this)"></a></li>
+                                        <li data-item="seis"><a class="imgPage006" href="#rayosx"><img class="animated seconds fadeInRight delay" src="img/8_9/btn006.png" alt="imgbtn006" onclick="servicios(this)"></a></li>
                                     </ul>
                                     <div data-item="uno" class="seconds imgPage"><!-- INICIO CONTENIDO RESONANCIA -->
                                         <div id="item001" class="content">
@@ -340,12 +340,12 @@
                                         <img data-src="img/12_13/btn_title_left.png">
                                     </div>
                                     <ul class="imagesGallery">
-                                        <li data-item="resonancia" class="animated seconds fadeInLeft delay delay001"><a class="gallery001" href="#galleryResonancia"><img data-src="img/12_13/btn_001.png"></a></li>
-                                        <li data-item="tomografia" class="animated seconds fadeInLeft delay delay002"><a class="gallery002" href="#galleryTomografia"><img data-src="img/12_13/btn_002.png"></a></li>
-                                        <li data-item="ecografia" class="animated seconds fadeInLeft delay delay003"><a class="gallery003" href="#galleryEcografia"><img data-src="img/12_13/btn_003.png"></a></li>
-                                        <li data-item="mamografia" class="animated seconds fadeInLeft delay delay004"><a class="gallery004" href="#galleryMamografia"><img data-src="img/12_13/btn_004.png"></a></li>
-                                        <li data-item="densitometria" class="animated seconds fadeInLeft delay delay005"><a class="gallery005" href="#galleryDensitometria"><img data-src="img/12_13/btn_005.png"></a></li>
-                                        <li data-item="rayosx" class="animated seconds fadeInLeft delay delay006"><a class="gallery006" href="#galleryRayosx"><img data-src="img/12_13/btn_006.png"></a></li>
+                                        <li data-item="resonancia" class="animated seconds fadeInLeft delay delay001"><a class="gallery001" href="#galleryResonancia"><img data-src="img/12_13/btn_001.png" onclick="gallery(this)"></a></li>
+                                        <li data-item="tomografia" class="animated seconds fadeInLeft delay delay002"><a class="gallery002" href="#galleryTomografia"><img data-src="img/12_13/btn_002.png" onclick="gallery(this)"></a></li>
+                                        <li data-item="ecografia" class="animated seconds fadeInLeft delay delay003"><a class="gallery003" href="#galleryEcografia"><img data-src="img/12_13/btn_003.png" onclick="gallery(this)"></a></li>
+                                        <li data-item="mamografia" class="animated seconds fadeInLeft delay delay004"><a class="gallery004" href="#galleryMamografia"><img data-src="img/12_13/btn_004.png" onclick="gallery(this)"></a></li>
+                                        <li data-item="densitometria" class="animated seconds fadeInLeft delay delay005"><a class="gallery005" href="#galleryDensitometria"><img data-src="img/12_13/btn_005.png" onclick="gallery(this)"></a></li>
+                                        <li data-item="rayosx" class="animated seconds fadeInLeft delay delay006"><a class="gallery006" href="#galleryRayosx"><img data-src="img/12_13/btn_006.png" onclick="gallery(this)"></a></li>
                                     </ul>
                                 </div><!-- END DESCRIPTION FOR PAGE -->
                             </div><!-- END CONTAINER PAGE BOOK -->
@@ -359,62 +359,62 @@
                                     <div class="galleryContent"><!-- INICIO MENUS -->
                                         <div data-item="resonancia" class="btnMenuGallery"><!-- INICIO MENU RESONANCIA -->
                                             <ul id="galleryresonancia">
-                                                <li><a href="#item001"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/1.jpg" alt="imgbtn001"></a></li>
-                                                <li><a href="#item002"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/2.jpg" alt="imgbtn002"></a></li>
-                                                <li><a href="#item003"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/3.jpg" alt="imgbtn003"></a></li>
-                                                <li><a href="#item004"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/4.jpg" alt="imgbtn004"></a></li>
-                                                <li><a href="#item005"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/5.jpg" alt="imgbtn005"></a></li>
-                                                <li><a href="#item006"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/6.jpg" alt="imgbtn006"></a></li>
+                                                <li><a href="#item001"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/1.jpg" alt="imgbtn001" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item002"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/2.jpg" alt="imgbtn002" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item003"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/3.jpg" alt="imgbtn003" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item004"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/4.jpg" alt="imgbtn004" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item005"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/5.jpg" alt="imgbtn005" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item006"><img class="animated seconds fadeInRight delay" src="img/12_13/resonancia/thumbs/6.jpg" alt="imgbtn006" onclick="galleryItems(this)"></a></li>
                                             </ul>
                                         </div><!-- FIN MENU RESONANCIA -->
                                         <div data-item="tomografia" class="btnMenuGallery"><!-- INICIO MENU TOMOGRAFIA -->
                                             <ul id="gallerytomografia">
-                                                <li><a href="#item007"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/1.jpg" alt="imgbtn007"></a></li>
-                                                <li><a href="#item008"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/2.jpg" alt="imgbtn008"></a></li>
-                                                <li><a href="#item009"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/3.jpg" alt="imgbtn009"></a></li>
-                                                <li><a href="#item010"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/4.jpg" alt="imgbtn010"></a></li>
-                                                <li><a href="#item011"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/5.jpg" alt="imgbtn011"></a></li>
-                                                <li><a href="#item012"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/6.jpg" alt="imgbtn012"></a></li>
+                                                <li><a href="#item007"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/1.jpg" alt="imgbtn007" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item008"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/2.jpg" alt="imgbtn008" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item009"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/3.jpg" alt="imgbtn009" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item010"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/4.jpg" alt="imgbtn010" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item011"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/5.jpg" alt="imgbtn011" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item012"><img class="animated seconds fadeInRight delay" src="img/12_13/tomografia/thumbs/6.jpg" alt="imgbtn012" onclick="galleryItems(this)"></a></li>
                                             </ul>
                                         </div><!-- FIN MENU TOMOGRAFIA -->
                                         <div data-item="ecografia" class="btnMenuGallery"><!-- INICIO MENU ECOGRAFIA -->
                                             <ul id="galleryecografia">
-                                                <li><a href="#item013"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/1.jpg" alt="imgbtn013"></a></li>
-                                                <li><a href="#item014"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/2.jpg" alt="imgbtn014"></a></li>
-                                                <li><a href="#item015"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/3.jpg" alt="imgbtn015"></a></li>
-                                                <li><a href="#item016"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/4.jpg" alt="imgbtn016"></a></li>
-                                                <li><a href="#item017"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/5.jpg" alt="imgbtn017"></a></li>
-                                                <li><a href="#item018"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/6.jpg" alt="imgbtn018"></a></li>
+                                                <li><a href="#item013"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/1.jpg" alt="imgbtn013" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item014"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/2.jpg" alt="imgbtn014" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item015"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/3.jpg" alt="imgbtn015" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item016"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/4.jpg" alt="imgbtn016" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item017"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/5.jpg" alt="imgbtn017" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item018"><img class="animated seconds fadeInRight delay" src="img/12_13/ecografia/thumbs/6.jpg" alt="imgbtn018" onclick="galleryItems(this)"></a></li>
                                             </ul>
                                         </div><!-- FIN MENU ECOGRAFIA -->
                                         <div data-item="mamografia" class="btnMenuGallery"><!-- INICIO MENU MAMOGRAFIA -->
                                             <ul id="gallerymamografia">
-                                                <li><a href="#item019"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/1.jpg" alt="imgbtn019"></a></li>
-                                                <li><a href="#item020"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/2.jpg" alt="imgbtn020"></a></li>
-                                                <li><a href="#item021"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/3.jpg" alt="imgbtn021"></a></li>
-                                                <li><a href="#item022"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/4.jpg" alt="imgbtn022"></a></li>
-                                                <li><a href="#item023"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/5.jpg" alt="imgbtn023"></a></li>
-                                                <li><a href="#item024"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/6.jpg" alt="imgbtn024"></a></li>
+                                                <li><a href="#item019"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/1.jpg" alt="imgbtn019" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item020"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/2.jpg" alt="imgbtn020" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item021"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/3.jpg" alt="imgbtn021" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item022"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/4.jpg" alt="imgbtn022" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item023"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/5.jpg" alt="imgbtn023" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item024"><img class="animated seconds fadeInRight delay" src="img/12_13/mamografia/thumbs/6.jpg" alt="imgbtn024" onclick="galleryItems(this)"></a></li>
                                             </ul>
                                         </div><!-- FIN MENU MAMOGRAFIA -->
                                         <div data-item="densitometria" class="btnMenuGallery"><!-- INICIO MENU DENSITOMETRIA -->
                                             <ul id="gallerydensitometria">
-                                                <li><a href="#item025"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/1.jpg" alt="imgbtn025"></a></li>
-                                                <li><a href="#item026"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/2.jpg" alt="imgbtn026"></a></li>
-                                                <li><a href="#item027"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/3.jpg" alt="imgbtn027"></a></li>
-                                                <li><a href="#item028"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/4.jpg" alt="imgbtn028"></a></li>
-                                                <li><a href="#item029"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/5.jpg" alt="imgbtn029"></a></li>
-                                                <li><a href="#item030"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/6.jpg" alt="imgbtn030"></a></li>
+                                                <li><a href="#item025"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/1.jpg" alt="imgbtn025" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item026"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/2.jpg" alt="imgbtn026" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item027"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/3.jpg" alt="imgbtn027" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item028"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/4.jpg" alt="imgbtn028" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item029"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/5.jpg" alt="imgbtn029" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item030"><img class="animated seconds fadeInRight delay" src="img/12_13/densitometria/thumbs/6.jpg" alt="imgbtn030" onclick="galleryItems(this)"></a></li>
                                             </ul>
                                         </div><!-- FIN MENU DENSITOMETRIA -->
                                         <div data-item="rayosx" class="btnMenuGallery"><!-- INICIO MENU RAYOS X -->
                                             <ul id="galleryrayosx">
-                                                <li><a href="#item031"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/1.jpg" alt="imgbtn031"></a></li>
-                                                <li><a href="#item032"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/2.jpg" alt="imgbtn032"></a></li>
-                                                <li><a href="#item033"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/3.jpg" alt="imgbtn033"></a></li>
-                                                <li><a href="#item034"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/4.jpg" alt="imgbtn034"></a></li>
-                                                <li><a href="#item035"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/5.jpg" alt="imgbtn035"></a></li>
-                                                <li><a href="#item036"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/6.jpg" alt="imgbtn036"></a></li>
+                                                <li><a href="#item031"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/1.jpg" alt="imgbtn031" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item032"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/2.jpg" alt="imgbtn032" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item033"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/3.jpg" alt="imgbtn033" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item034"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/4.jpg" alt="imgbtn034" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item035"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/5.jpg" alt="imgbtn035" onclick="galleryItems(this)"></a></li>
+                                                <li><a href="#item036"><img class="animated seconds fadeInRight delay" src="img/12_13/rayosx/thumbs/6.jpg" alt="imgbtn036" onclick="galleryItems(this)"></a></li>
                                             </ul>
                                         </div><!-- FIN MENU RAYOS X -->
                                     </div><!-- FIN MENUS -->
@@ -633,7 +633,7 @@
                         "page_width": "960",
                         "page_height": "1080",
                         "email_form": "office@somedomain.com",
-                        "zoom_double_click": "1",
+                        // "zoom_double_click": "1",
                         "zoom_step": "0.06",
                         "double_click_enabled": "true",
                         "tooltip_visible": "true",
@@ -647,189 +647,6 @@
                     }
             )
         </script>
-        <script type="text/javascript">
-            jQuery('#fb5-book').on('click', function (e) {
-                e.preventDefault();
-            });
-            var swMenuServicios = false;
-            var imgFondo;
-            var classGallery;
-            var Gallery = false;
-            var idTitulo = jQuery('.tituloLeft, .tituloRight');
-            var idBgDown = jQuery('.bgDown');
-            var idBg = jQuery('.bg');
-            var delay = 400;
-            var delayTwo = 800;
-            function disableAnimate() {
-                var pages = jQuery('#fb5-book').turn('view');
-                setTimeout(function () {
-                    pages.forEach(function (element) {
-                        if (element !== 0) {
-                            jQuery('div[page=' + element + '] .animated').removeClass('animated fadeInRight fadeInLeft fadeInDown fadeInUp logoAnimated');
-                        }
-                    });
-                }, 4000);
-            }
-            function hideContebtVentajas() {
-                setTimeout(function () {
-                    jQuery('.contenido > div').removeClass('slide');
-                    jQuery('.titleLeft, .titleRight').removeClass('titleMostrar');
-                    jQuery('.hidden').removeClass('ocultar');
-                    jQuery('.block_left, .block_Right, .blockLeft').removeClass('block_Mostrar');
-                    jQuery('.leftWidht').removeClass('leftWidht');
-                    jQuery('.serviciosMain').removeClass('serviciosMainActive');
-                    jQuery('.imgPage').removeClass('imgPageMostrar');
-                    jQuery('.btnMenu').removeClass('btnMenuMostrar');
-                    jQuery('.imgBtnLeft').removeClass('imgBtnLeftActive');
-                    jQuery('.imgBtnRight').removeClass('imgBtnRightActive');
-                    jQuery('.btnTitle').removeClass('delay');
-                    jQuery('.btnTitle').addClass('titleventajasMostrar');
-                    jQuery('.tituloLeft, .tituloRight').removeClass('tituloMostrar');
-                    jQuery('.bg').removeClass('bgMostrar');
-                    jQuery('.bgDown').removeClass('bgDownMostrar');
-                    jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
-                    jQuery('.contentGallery').removeClass('contentGalleryMostrar');
-                }, delay);
-            }
-            function fnc_servicios() {
-                jQuery('.serviciosMain a img').on('click', function (e) {
-                    e.preventDefault();
-                    var $this = jQuery(this);
-                    var idSubMenu = $this.parent().attr('href');
-                    imgFondo = $this.parent().attr('class');
-                    var indexMenu = $this.parent().parent().attr('data-item');
-                    var subMenu = jQuery(idSubMenu).parent();
-                    setTimeout(function () {
-                        jQuery('.imgPage').removeClass('imgPageMostrar');
-                        jQuery('.imgPage[data-item="' + indexMenu + '"]').addClass('imgPageMostrar ' + imgFondo);
-                        if (!subMenu.hasClass('btnMenuMostrar')) {
-                            jQuery('.btnMenu').removeClass('btnMenuMostrar');
-                            subMenu.addClass('btnMenuMostrar');
-                        }
-                    }, 400);
-                    jQuery('li[data-item]').removeClass('serviceActive');
-                    $this.parent().parent().addClass('serviceActive');
-                    jQuery('.serviciosMain').addClass('serviciosMainActive');
-                    jQuery('.imgBtnLeft').addClass('imgBtnLeftActive');
-                    jQuery('.imgBtnRight').addClass('imgBtnRightActive');
-                });
-
-                jQuery('.btnMenu li img').on('click', function (e) {
-                    e.preventDefault();
-                    var $this = jQuery(this);
-                    var idElemContent = $this.parent().attr('href');
-                    var elemContent = jQuery(idElemContent);
-                    if (elemContent.hasClass('contentMostrar')) {
-                        elemContent.removeClass('contentMostrar');
-                    } else {
-                        elemContent.siblings().removeClass('contentMostrar');
-                        elemContent.addClass('contentMostrar');
-                    }
-                });
-                swMenuServicios = true;
-            }
-
-            function fnc_show_especialistas() {
-                idBgDown.addClass('bgDownMostrar');
-                setTimeout(function () {
-                    idTitulo.addClass('tituloMostrar');
-                }, delay);
-                setTimeout(function () {
-                    idBg.addClass('bgMostrar');
-                }, delayTwo);
-            }
-
-            function fnc_hide_especialistas() {
-                idTitulo.removeClass('tituloMostrar');
-                setTimeout(function () {
-                    idBg.removeClass('bgMostrar');
-                }, delay);
-                setTimeout(function () {
-                    idBgDown.removeClass('bgDownMostrar');
-                }, delayTwo);
-            }
-
-            function fnc_gallery() {
-                jQuery('.imagesGallery li a img').on('click', function (e) {
-                    e.preventDefault();
-                    var $this = jQuery(this);
-                    var indexMenuGallery = $this.parent().parent().attr('data-item');
-                    var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
-                    var idElemMenu = jQuery(subMenuGallery).parent().parent().find('.imagesGalleryBig .galleryPage .contentGallery');
-                    var elemtMenu = jQuery(idElemMenu);
-                    jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
-                    jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').addClass('btnMenuGalleryMostrar');
-                    if (elemtMenu.hasClass('contentGalleryMostrar')) {
-                        elemtMenu.removeClass('contentGalleryMostrar');
-                    }
-                });
-                jQuery('.btnMenuGallery li a img').on('click', function (e) {
-                    e.preventDefault();
-                    var $this = jQuery(this);
-                    var idElemContent = $this.parent().attr('href');
-                    var elemContent = jQuery(idElemContent);
-                    if (elemContent.hasClass('contentGalleryMostrar')) {
-                        elemContent.removeClass('contentGalleryMostrar');
-                    } else {
-                        elemContent.siblings().removeClass('contentGalleryMostrar');
-                        elemContent.addClass('contentGalleryMostrar');
-                    }
-                    elemContent.addClass('contentGalleryMostrar');
-                });
-                Gallery = true;
-            }
-            window.onload = function () {
-                disableAnimate();
-                if (jQuery('.serviciosMain a img')[0]) {
-                    fnc_servicios();
-                }
-                jQuery('.prev, .next').on('click', function () {
-                    disableAnimate();
-                    var pages = jQuery('#fb5-book').turn('view');
-                    pages.forEach(function (element) {
-                        if (element === 2) {
-                            jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
-                        }
-                        if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
-                            fnc_servicios();
-                        }
-                    });
-                    hideContebtVentajas();
-                    fnc_gallery();
-                });
-                jQuery('ul.images_2 a img').on('click', function (e) {
-                    e.preventDefault();
-                    var idContent = jQuery(this).parent().attr('href');
-                    var elemContent = jQuery(idContent);
-                    if (elemContent.hasClass('slide')) {
-                        elemContent.toggleClass('slide');
-                    } else {
-                        jQuery('.contenido > div').removeClass('slide');
-                        elemContent.toggleClass('slide');
-                    }
-                });
-                jQuery('.btnInformatica').on('click', function (e) {
-                    e.preventDefault();
-                    var idcontenido = jQuery('.blockLeft');
-                    if (idcontenido.hasClass('block_Mostrar')) {
-                        idcontenido.toggleClass('block_Mostrar');
-                    } else {
-                        jQuery('.contenido > div').removeClass('block_Mostrar');
-                        idcontenido.toggleClass('block_Mostrar');
-                    }
-                });
-                jQuery('.btnTitle').on('click', function (e) {
-                    e.preventDefault();
-                    jQuery(this).addClass('titleventajas').parent().parent().addClass('leftWidht');
-                    jQuery('.titleLeft, .titleRight').addClass('titleMostrar');
-                    jQuery('.btnTitle').removeClass('titleventajasMostrar');
-                    jQuery('.hidden').addClass('ocultar');
-                    jQuery('.block_left, .block_Right').addClass('block_Mostrar');
-                });
-                jQuery('.titleLeft img, .titleRight img').on('click', function () {
-                    hideContebtVentajas();
-                });
-            };
-        </script>
+        <script src="js/init.js"></script>
     </body>
 </html>
