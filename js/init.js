@@ -84,6 +84,7 @@ function hideContebtVentajas() {
         jQuery('.bgDown').removeClass('bgDownMostrar');
         jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
         jQuery('.contentGallery').removeClass('contentGalleryMostrar');
+        jQuery('.contentMostrar').removeClass('contentMostrar');
     }, delay);
 }
 
@@ -149,8 +150,14 @@ function gallery($this) {
     var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
     var idElemMenu = jQuery(subMenuGallery).parent().parent().find('.imagesGalleryBig .galleryPage .contentGallery');
     var elemtMenu = jQuery(idElemMenu);
-    jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
-    jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').addClass('btnMenuGalleryMostrar');
+    
+    if (jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').hasClass('btnMenuGalleryMostrar')) {
+        jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').removeClass('btnMenuGalleryMostrar');
+    } else {
+        jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
+        jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').toggleClass('btnMenuGalleryMostrar');
+    } 
+    
     if (elemtMenu.hasClass('contentGalleryMostrar')) {
         elemtMenu.removeClass('contentGalleryMostrar');
     }
@@ -171,25 +178,16 @@ window.onload = function () {
 
     disableAnimate();
 
-    if (jQuery('.serviciosMain a img')[0]) {
-        servicios();
-    }
-
     jQuery('.prev, .next').on('click', function () {
         disableAnimate();
         var pages = jQuery('#fb5-book').turn('view');
         pages.forEach(function (element) {
-            if (element === 2) {
+            if (element === 2 ) {
                 jQuery('.p8').removeClass('btnMenuMostrar, imgPageMostrar, contentMostrar');
-            }
-            if ((element === 7 || element === 10 || element === 8) && swMenuServicios === false) {
-                servicios();
             }
         });
 
         hideContebtVentajas();
-
         gallery();
-
     });
 };
