@@ -150,14 +150,14 @@ function gallery($this) {
     var subMenuGallery = jQuery('.galleryContent').find('.btnMenuGallery');
     var idElemMenu = jQuery(subMenuGallery).parent().parent().find('.imagesGalleryBig .galleryPage .contentGallery');
     var elemtMenu = jQuery(idElemMenu);
-    
+
     if (jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').hasClass('btnMenuGalleryMostrar')) {
         jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').removeClass('btnMenuGalleryMostrar');
     } else {
         jQuery('.btnMenuGallery').removeClass('btnMenuGalleryMostrar');
         jQuery('.btnMenuGallery[data-item="' + indexMenuGallery + '"]').toggleClass('btnMenuGalleryMostrar');
-    } 
-    
+    }
+
     if (elemtMenu.hasClass('contentGalleryMostrar')) {
         elemtMenu.removeClass('contentGalleryMostrar');
     }
