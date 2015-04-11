@@ -785,7 +785,9 @@ html,body {
 .p10 .fb5-page-book,
 .p11 .fb5-page-book,
 .p12 .fb5-page-book,
-.p13 .fb5-page-book {
+.p13 .fb5-page-book,
+.p14 .fb5-page-book,
+.p15 .fb5-page-book {
 	height: 100% !important;
 	width: 960px !important;
 	left: 0 !important;
@@ -1071,6 +1073,7 @@ html,body {
 
 .delay {
 	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
 }
 
 .p8 .imgBtnLeft{
@@ -1118,10 +1121,11 @@ html,body {
 }
 
 .serviciosMain, .serviciosMain li img, .imgBtnLeft, .imgBtnRight {
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 .serviciosMainActive {
@@ -1134,11 +1138,11 @@ html,body {
 }
 
 .serviciosMain li img {
-	-moz-transition: all 0.2 ease-in-out;
-	-ms-transition: all 0.2 ease-in-out;
-	-o-transition: all 0.2 ease-in-out;
-	-webkit-transition: all 0.2 ease-in-out;
-	transition: all 0.2 ease-in-out;
+	-moz-transition: all 0.2 linear;
+	-ms-transition: all 0.2 linear;
+	-o-transition: all 0.2 linear;
+	-webkit-transition: all 0.2 linear;
+	transition: all 0.2 linear;
 }
 
 .serviciosMain li:hover img{
@@ -1335,11 +1339,9 @@ html,body {
 }
 
 .btnMenuGallery {
-	-webkit-transform: translateX(1000px);
+	-webkit-transform: translate(1000px,105%);
 	-webkit-transition: -webkit-transform 0.4s;
 	position: absolute;
-	top: 13%;
-	right: 2%;
 }
 
 .btnMenuGallery li {
@@ -1347,14 +1349,155 @@ html,body {
 	margin-right: 1px !important;
 }
 
-.contentGallery {
-	-webkit-transform: translateX(1000px);
-	-webkit-transition: -webkit-transform 0.4s;
-	position: absolute;
-	right: 2%;
-	top: 28%;
+.btnMenuGalleryMostrar {
+	-webkit-transform: translate(0,105%);
+	float: left;
+	left: 50%;
+	position: relative;
 }
 
-.btnMenuGalleryMostrar, .contentGalleryMostrar {
+.btnMenuGalleryMostrar  ul {
+	position: relative;
+	right: 50%;
+}
+
+.imagesGalleryBig .galleryPage {
+}
+
+.contentGallery {
+  -webkit-transform: translateX(1000px);
+  -webkit-transition: -webkit-transform 0.4s;
+  position: absolute;
+  right: 2%;
+  top: 28%;
+}
+
+.contentGalleryMostrar {
 	-webkit-transform: translateX(0);
+	text-align: center;
+	width: 100%;
+}
+
+.contentGalleryMostrar img {
+	margin: auto !important;
+}
+
+/*.contentGalleryMostrar {
+	-webkit-transform: translate(0,45%);
+	float: left;
+	left: 50%;
+	position: relative;
+}
+
+.contentGalleryMostrar img {
+	position: relative;
+	right: 50%;
+}*/
+
+.imagesPage14 li{
+	position: absolute;
+	margin-left: 8% !important;
+}
+
+.imagesPage14 li:nth-child(1) {
+	top: 15%;
+}
+
+.imagesPage14 li:nth-child(2) {
+	top: 40%;
+}
+
+.imagesPage14 li:nth-child(3) {
+	top: 65%;
+}
+
+.contentPage014 > div{
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	bottom: 0;
+	left: 0;
+	margin: auto !important;
+	padding: 0 !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.contentPage014 .slide {
+  -webkit-transform: translateX(0);
+}
+
+.contentPage014 img {
+	bottom: 0;
+	left: 0;
+	margin: auto !important;
+	padding: 0 !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.thumbnails li {
+    display: inline-block;
+}
+
+.thumbnails {
+    position: relative;
+    top: 15%;
+}
+
+.iframes {
+	position: relative;
+    top: 15%;
+}
+
+.iframes .iframe {
+  position: absolute;
+  top: 15%;
+}
+
+/* CONTENIDO OCULTO DERECHA */
+.hiddenRight {
+	-webkit-transform: translateX(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	transform: translateX(1000px);
+	transition: -webkit-transform 0.4s;
+}
+
+/* CONTENIDO OCULTO IZQUIERDA */
+.hiddenLeft {
+	-webkit-transform: translateX(-1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	transform: translateX(-1000px);
+	transition: -webkit-transform 0.4s;
+}
+
+
+/* MOSRTAR CONTENIDO OCULTO DERECHA-IZQUIERDA */
+.contentShowX {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+
+/* CONTENIDO OCULTO ABAJO */
+.hiddenBottom{
+	-webkit-transform: translateY(1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	transform: translateY(1000px);
+	transition: -webkit-transform 0.4s;
+}
+
+/* CONTENIDO OCULTO ARRIBA */
+.hiddenTop {
+	-webkit-transform: translateY(-1000px);
+	-webkit-transition: -webkit-transform 0.4s;
+	transform: translateY(-1000px);
+	transition: -webkit-transform 0.4s;
+}
+
+/* MOSTRAR CONTENIDO OCULTO ABAJO - ARRIBA */
+.contentShowY{
+	-webkit-transform: translateY(0);
+	transform: translateX(0);
 }

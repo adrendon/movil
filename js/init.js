@@ -174,6 +174,55 @@ function galleryItems($this) {
     }
 }
 
+
+//Page 013 - 014
+
+function contactenos($this) {
+    var idContent = jQuery($this).parent().attr('href');
+    var subMenu = jQuery('.p15').find('.thumbnails');
+
+    var elemContent = jQuery(idContent);
+    if (elemContent.hasClass('slide')) {
+        elemContent.toggleClass('slide');
+    } else {
+        jQuery('.contentPage014 > div').removeClass('slide');
+        elemContent.toggleClass('slide');
+    }
+
+    if (subMenu.hasClass('contentShowX')) {
+        subMenu.removeClass('contentShowX');
+    }
+}
+
+function mapas($this) {
+    var subMenu = jQuery('.p15').find('.thumbnails');
+    var subMenuGallery = jQuery('.contentPage014').find('.contentPage');
+
+    if (subMenu.hasClass('contentShowX')) {
+        subMenu.toggleClass('contentShowX');
+    } else {
+        subMenu.hasClass('contentShowX');
+        subMenu.toggleClass('contentShowX');
+    }
+
+    if (subMenuGallery.hasClass('slide')) {
+        subMenuGallery.removeClass('slide');
+    }
+
+}
+
+function mapa ($this) {
+    var idElemContent = jQuery($this).parent().attr('href');
+    var elemContent = jQuery(idElemContent);
+    if (elemContent.hasClass('contentShowX')) {
+        elemContent.removeClass('contentShowX');
+    } else {
+        elemContent.siblings().removeClass('contentShowX');
+        elemContent.addClass('contentShowX');
+    }
+}
+
+
 window.onload = function () {
 
     disableAnimate();
